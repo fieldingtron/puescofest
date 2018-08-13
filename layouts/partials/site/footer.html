@@ -1,0 +1,31 @@
+{{ $.Scratch.Set "count" 1 }}
+{{ range first 8 (where .Site.Pages "Section" "in" (slice "logos")) }} 
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-{{$.Scratch.Get "count"}}">
+        {{ $.Scratch.Add "count" 1 }}
+        <div class="portfolio-modal-dialog bg-white">
+          <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+            <i class="fa fa-3x fa-times"></i>
+          </a>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="text-secondary text-uppercase mb-0">{{.Title}}</h2>
+                <hr class="star-dark mb-5">
+                {{ $image := .Resources.GetMatch "*.png" }}
+                {{$title := .Title}}
+                {{ with $image }}
+                    {{ $scaled := .Resize "1024x" }}
+                    <img class="img-fluid mb-5" src="{{ $scaled.Permalink }}" alt="{{$title }}">
+                {{end}}
+                <p class="mb-5">{{.Content}}</p>
+                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                  <i class="fa fa-close"></i>
+                  Close Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{{end}} 

@@ -1,0 +1,36 @@
+
+<ul class="list-inline mb-0">
+    {{with .Site.Params.facebook_username}}
+    <li class="list-inline-item">
+      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="{{.}}">
+        <i class="fa fa-fw fa-facebook"></i>
+      </a>
+    </li>
+    {{end}}
+
+    {{with .Site.Params.google_plus}}
+    <li class="list-inline-item">
+      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="{{.}}">
+        <i class="fa fa-fw fa-google-plus"></i>
+      </a>
+    </li>
+    {{end}}
+
+    {{with .Site.Params.twitter}}
+    <li class="list-inline-item">
+      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="{{.}}">
+        <i class="fa fa-fw fa-twitter"></i>
+      </a>
+    </li>
+    {{end}}
+
+    {{with .Site.Params.linked_in}}
+    <li class="list-inline-item">
+      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="{{.}}">
+        <i class="fa fa-fw fa-linkedin"></i>
+      </a>
+    </li>
+    {{end}}
+    
+  </ul>
+</div>

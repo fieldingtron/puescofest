@@ -1,0 +1,14 @@
+.paral {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.paralsec {
+  background-image: url("/images/eye_nebula.jpg"); }
+
+.paralsec2 {
+  background-image: url("/images/milkyway.jpg"); }
+
+.smallnav {
+  font-size: 0.6em; }

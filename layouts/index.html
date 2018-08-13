@@ -1,0 +1,102 @@
+{{ define "main" }}
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center  paral paralsec">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="/images/AurusProfile2.png" alt="">
+<!--         <h1 class="text-uppercase mb-0">{{.Site.Params.jumboHeader}}</h1>
+ -->        
+ <img class="img-fluid mt-3  mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
+
+        <h2 class="font-weight-light mb-0">{{.Site.Params.tagline}}</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <img class="img-fluid mt-3  mb-5 d-block mx-auto" width="250" src="/images/line-circle-oscuro.png" alt="">
+        <div class="row">
+        {{ $.Scratch.Set "count" 1 }}
+        {{ range first 8 (where .Site.Pages "Section" "in" (slice "logos")) }} 
+          <div class="col-sm-6 col-lg-3">
+              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{$.Scratch.Get "count"}}"> {{ $.Scratch.Add "count" 1 }}
+                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                {{ $image := .Resources.GetMatch "*.png" }}
+                {{$title := .Title}}
+                {{ with $image }}
+                  {{ $scaled := .Resize "1024x" }}
+                  <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
+                {{ end }}
+              </a>
+            </div>  
+           
+        {{ end }} 
+
+         
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0  paral paralsec2" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">{{.Site.Params.about_text_heading}}</h2>
+        <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead"> {{.Site.Params.about_text_1}} </p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead"> {{.Site.Params.about_text_2}} </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    {{ partial "contactform.html" . }}
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Contacto</h4>
+            <p class="lead mb-0">  <a class="text-white" href="https://api.whatsapp.com/send?phone=56956024785"><i class="fa fa-fw fa-whatsapp"></i> Chatear con Whatsapp</a>
+              <br> +56956024785
+              {{.Site.Params.address_line_2}}            
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Social</h4>
+            {{ partial "social.html" . }}
+
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Sobre {{.Title}}</h4>
+            <p class="lead mb-0">  {{.Site.Params.address_line_1}} 
+              <br> Acepto pagos con <a class="text-white" href='https://paypal.me/MariaPintoaller'>Paypal</a> {{.Site.Params.footer_right}} </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; {{.Title}} 2018</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+{{ end }}

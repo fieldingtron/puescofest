@@ -1,0 +1,9 @@
+# redirects for Netlify - https://www.netlify.com/docs/redirects/
+/home   / 302
+/go/wsj https://wsj.com/ 302
+/cnn https://cnn.com 302
+{{- range $p := .Site.Pages -}}
+{{- range .Aliases }}
+{{ . }} {{ $p.RelPermalink -}}
+{{- end }}
+{{- end -}}
