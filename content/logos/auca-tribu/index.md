@@ -1,7 +1,6 @@
 ---
-title: "AvaniYogaRetreats"
+title: "Tiano Bless"
 date: 2017-01-01
-image: avaniyogaretreats.png
 draft: false
 headless : false
 

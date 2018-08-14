@@ -4,45 +4,13 @@
       <div class="container">
     
 
-        <h2 class="font-weight-light my-6">. </h2>
-        <h2 class="font-weight-light my-6">. </h2>
-
-        <h2 class="font-weight-light my-6"> . </h2>
-
+        <h2 class="hidden my-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi maiores, hic odio corporis accusamus, voluptate eum necessitatibus fugiat inventore, aperiam autem. Porro obcaecati possimus officia nam ratione impedit magni aliquid, placeat nihil cumque rem unde laboriosam tempore fugit distinctio, maiores, totam quo. Suscipit cupiditate corporis fuga voluptatibus ratione dolores tenetur repudiandae aperiam libero earum aut rem dicta, itaque enim eaque quisquam qui, eligendi reiciendis delectus? Eius, adipisci quasi distinctio voluptatum beatae corporis, placeat, ab reprehenderit possimus laudantium reiciendis asperiores accusamus delectus harum obcaecati voluptas. Porro quos dolore vitae, corporis qui ut odio deserunt incidunt molestiae pariatur inventore ipsa quasi ea cum repellendus optio iure sint, commodi tenetur iste alias. Labore reprehenderit beatae assumenda reiciendis quidem, autem voluptatum pariatur fugit voluptatem numquam perferendis ex explicabo repellendus temporibus nostrum animi nisi adipisci eaque quae vitae deleniti veniam. Corporis rem dolores, fugiat laborum temporibus, adipisci porro aliquid obcaecati ab at nesciunt eum aperiam soluta eveniet maiores, ratione in similique. Quis deserunt facere iure ratione tempora maiores molestias, iusto, error, impedit dolor totam maxime nulla eius dolore soluta! Quia, neque. Magnam cumque blanditiis fugiat corrupti quibusdam rem, doloribus ipsum facilis officiis qui eveniet, et unde, nobis sint voluptatem dolores. Soluta officia molestias commodi.  </h2>
+         
+        <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sequi eos cumque earum maiores ipsam, natus tempore necessitatibus doloremque id nesciunt similique, dolore nobis. Velit ducimus repudiandae aspernatur? Soluta blanditiis, cumque enim cum magni veritatis quam quasi maiores voluptatem sit expedita, vel voluptate sed! Aperiam minima nostrum totam voluptatum dicta quidem saepe repellat, non eum amet? Perspiciatis corrupti facilis distinctio consequatur et voluptate commodi, fugiat pariatur corporis minima voluptates tempore tenetur. Dolores cum facere delectus laudantium, facilis laborum qui dicta ipsa dignissimos optio quidem ut, ratione, est ullam nihil quae ea temporibus? Sit incidunt quas, rem quis reprehenderit, magnam enim eius earum necessitatibus corporis accusantium tenetur, placeat obcaecati eaque saepe maiores perspiciatis dolorem sequi provident voluptatem minima reiciendis eveniet asperiores! Quis sit totam velit? Expedita, ipsum impedit quos sunt sed deleniti voluptatum consequuntur doloremque amet nostrum, earum magnam id voluptatibus? Possimus consequatur ullam iusto similique excepturi ad, tempore tenetur molestiae laudantium repellat voluptates earum non ducimus nobis voluptatibus accusamus? Excepturi eum beatae odit aspernatur incidunt omnis culpa, harum ut ex velit dolore totam quis mollitia optio molestias deserunt fugiat quaerat perferendis animi rem, nihil officia reprehenderit rerum assumenda? Adipisci magni illum voluptas nihil atque, praesentium at ullam explicabo beatae ea eius? Consectetur cupiditate voluptate, officiis a officia soluta ratione? Vitae ab consequuntur odit, ad totam laborum mollitia, autem eius recusandae doloribus eligendi velit at perferendis dignissimos! Fugit tempora, quod enim, reiciendis sunt quo doloremque hic aut porro assumenda odio, consequatur quaerat aperiam deleniti sed magni debitis temporibus accusamus at repellendus impedit corporis provident nostrum iusto! Distinctio commodi nemo obcaecati ipsum rerum veritatis laudantium culpa ipsam magni. Incidunt facere iste, rem provident pariatur quaerat hic eaque fugiat ducimus quos aliquid necessitatibus explicabo earum commodi veritatis aut dolore labore rerum asperiores libero repellat est minima? Incidunt, veritatis doloribus in nisi distinctio quidem.</p>
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-        <img class="img-fluid mt-3  mb-5 d-block mx-auto" width="250" src="/images/line-circle-oscuro.png" alt="">
-        <div class="row">
-        {{ $.Scratch.Set "count" 1 }}
-        {{ range first 8 (where .Site.Pages "Section" "in" (slice "logos")) }} 
-          <div class="col-sm-6 col-lg-3">
-              <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{$.Scratch.Get "count"}}"> {{ $.Scratch.Add "count" 1 }}
-                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                    <i class="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                {{ $image := .Resources.GetMatch "*.png" }}
-                {{$title := .Title}}
-                {{ with $image }}
-                  {{ $scaled := .Resize "1024x" }}
-                  <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
-                {{ end }}
-              </a>
-            </div>  
-           
-        {{ end }} 
 
-         
-        
-        </div>
-      </div>
-    </section>
 <!-- Programa Section -->
 <section class="bg-primary text-white mb-0  paral" id="programa">
   <div class="container">
@@ -107,22 +75,39 @@
       </div>
     </section>
 
-    <!-- Musica Section -->
-    <section class="bg-primary text-white mb-0  paral paralsec2" id="musica">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Musica </h2>
-        <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead"> {{.Site.Params.about_text_1}} </p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead"> {{.Site.Params.about_text_2}} </p>
+       <!-- Portfolio Grid Section -->
+       <section class="portfolio" id="musica">
+        <div class="container">
+          <h2 class="text-center text-uppercase text-secondary mb-0">Musica</h2>
+          <img class="img-fluid mt-3  mb-5 d-block mx-auto" width="250" src="/images/line-circle-oscuro.png" alt="">
+          <div class="row">
+          {{ $.Scratch.Set "count" 1 }}
+          {{ range first 8 (where .Site.Pages "Section" "in" (slice "logos")) }} 
+            <div class="col-sm-6 col-lg-3">
+                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{$.Scratch.Get "count"}}"> {{ $.Scratch.Add "count" 1 }}
+                  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  {{ $image := .Resources.GetMatch "*.png" }}
+                  {{$title := .Title}}
+                  {{ with $image }}
+                    {{ $scaled := .Resize "1024x" }}
+                    <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
+                  {{ end }}
+                </a>
+              </div>  
+             
+          {{ end }} 
+  
+           
+          
           </div>
         </div>
-        
-      </div>
-    </section>
+      </section>
+
+
 
      <!-- Mercadito Section -->
      <section class="bg-primary text-white mb-0  paral paralsec2" id="mercadito">
