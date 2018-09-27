@@ -10,6 +10,19 @@
 .paralsec2 {
     background-image: url("/images/milkyway.jpg");
 }
+.paralsec3 {
+    background-image: url("/images/header1-all-2.jpg");
+}
 .smallnav{
     font-size: 0.75em;
+}
+
+.first-section {
+    background: url("/images/header1-all-2.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
 }
