@@ -1,172 +1,117 @@
 {{ define "main" }}
-    
-
 <section class="first-section" id="init">
 </section>
-<!-- Header -->
+<!-- Nav Bar -->
+<section class="second-section" id="video">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand mobile" href="#">
+              </a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <header class="masthead bg-primary text-white text-center  paral paralsec">
-      <div class="container">
-          <img class="img-responsive" src="/images/headerimg_chania.jpg" alt="Header"  > 
-
-
-<!--     
-
-        <h2 class="hidden my-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi maiores, hic odio corporis accusamus, voluptate eum necessitatibus fugiat inventore, aperiam autem. Porro obcaecati possimus officia nam ratione impedit magni aliquid, placeat nihil cumque rem unde laboriosam tempore fugit distinctio, maiores, totam quo. Suscipit cupiditate corporis fuga voluptatibus ratione dolores tenetur repudiandae aperiam libero earum aut rem dicta, itaque enim eaque quisquam qui, eligendi reiciendis delectus? Eius, adipisci quasi distinctio voluptatum beatae corporis, placeat, ab reprehenderit possimus laudantium reiciendis asperiores accusamus delectus harum obcaecati voluptas. Porro quos dolore vitae, corporis qui ut odio deserunt incidunt molestiae pariatur inventore ipsa quasi ea cum repellendus optio iure sint, commodi tenetur iste alias. Labore reprehenderit beatae assumenda reiciendis quidem, autem voluptatum pariatur fugit voluptatem numquam perferendis ex explicabo repellendus temporibus nostrum animi nisi adipisci eaque quae vitae deleniti veniam. Corporis rem dolores, fugiat laborum temporibus, adipisci porro aliquid obcaecati ab at nesciunt eum aperiam soluta eveniet maiores, ratione in similique. Quis deserunt facere iure ratione tempora maiores molestias, iusto, error, impedit dolor totam maxime nulla eius dolore soluta! Quia, neque. Magnam cumque blanditiis fugiat corrupti quibusdam rem, doloribus ipsum facilis officiis qui eveniet, et unde, nobis sint voluptatem dolores. Soluta officia molestias commodi.  </h2>
-         
-        <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sequi eos cumque earum maiores ipsam, natus tempore necessitatibus doloremque id nesciunt similique, dolore nobis. Velit ducimus repudiandae aspernatur? Soluta blanditiis, cumque enim cum magni veritatis quam quasi maiores voluptatem sit expedita, vel voluptate sed! Aperiam minima nostrum totam voluptatum dicta quidem saepe repellat, non eum amet? Perspiciatis corrupti facilis distinctio consequatur et voluptate commodi, fugiat pariatur corporis minima voluptates tempore tenetur. Dolores cum facere delectus laudantium, facilis laborum qui dicta ipsa dignissimos optio quidem ut, ratione, est ullam nihil quae ea temporibus? Sit incidunt quas, rem quis reprehenderit, magnam enim eius earum necessitatibus corporis accusantium tenetur, placeat obcaecati eaque saepe maiores perspiciatis dolorem sequi provident voluptatem minima reiciendis eveniet asperiores! Quis sit totam velit? Expedita, ipsum impedit quos sunt sed deleniti voluptatum consequuntur doloremque amet nostrum, earum magnam id voluptatibus? Possimus consequatur ullam iusto similique excepturi ad, tempore tenetur molestiae laudantium repellat voluptates earum non ducimus nobis voluptatibus accusamus? Excepturi eum beatae odit aspernatur incidunt omnis culpa, harum ut ex velit dolore totam quis mollitia optio molestias deserunt fugiat quaerat perferendis animi rem, nihil officia reprehenderit rerum assumenda? Adipisci magni illum voluptas nihil atque, praesentium at ullam explicabo beatae ea eius? Consectetur cupiditate voluptate, officiis a officia soluta ratione? Vitae ab consequuntur odit, ad totam laborum mollitia, autem eius recusandae doloribus eligendi velit at perferendis dignissimos! Fugit tempora, quod enim, reiciendis sunt quo doloremque hic aut porro assumenda odio, consequatur quaerat aperiam deleniti sed magni debitis temporibus accusamus at repellendus impedit corporis provident nostrum iusto! Distinctio commodi nemo obcaecati ipsum rerum veritatis laudantium culpa ipsam magni. Incidunt facere iste, rem provident pariatur quaerat hic eaque fugiat ducimus quos aliquid necessitatibus explicabo earum commodi veritatis aut dolore labore rerum asperiores libero repellat est minima? Incidunt, veritatis doloribus in nisi distinctio quidem.</p> -->
-      </div>
-    </header>
-
-
-<!-- Programa Section -->
-<section class="bg-primary text-white mb-0  paral" id="programa">
-  <div class="container">
-    <h2 class="text-center text-uppercase text-white"> Programa </h2>
-    <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
-    <div class="row">
-      <div class="col-lg-4 ml-auto">
-        <p class="lead"> {{.Site.Params.about_text_1}} </p>
-      </div>
-      <div class="col-lg-4 mr-auto">
-        <p class="lead"> {{.Site.Params.about_text_2}} </p>
-      </div>
-    </div>  
-  </div>
-</section>
-
- <!-- Como Llegar Section -->
- <section class="bg-secondary text-white mb-0  paral" id="comollegar">
-  <div class="container">
-    <h2 class="text-center text-uppercase text-white">Como Llegar </h2>
-    <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
-    <div class="row">
-      <div class="col-lg-4 ml-auto">
-        <p class="lead"> {{.Site.Params.about_text_1}} </p>
-      </div>
-      <div class="col-lg-4 mr-auto">
-        <p class="lead"> {{.Site.Params.about_text_2}} </p>
-      </div>
-    </div>  
-  </div>
-</section>
-
- <!-- Camping Section -->
- <section class="bg-primary text-white mb-0  paral" id="camping">
-  <div class="container">
-    <h2 class="text-center text-uppercase text-white">Camping </h2>
-    <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
-    <div class="row">
-      <div class="col-lg-4 ml-auto">
-        <p class="lead"> {{.Site.Params.about_text_1}} </p>
-      </div>
-      <div class="col-lg-4 mr-auto">
-        <p class="lead"> {{.Site.Params.about_text_2}} </p>
-      </div>
-    </div>  
-  </div>
-</section>
-
-    <!-- Kayak Section -->
-    <section class="bg-secondary text-white mb-0  paral" id="kayak">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Kayak </h2>
-        <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
+                <ul class="nav navbar-nav navbar-right" >
+                    <li ><a href="/en/"> English </a></li>
+                    <li class="line"><a href="" >/</a></li>
+                    <li ><a href="/es/"> Español </a></li>
+                    <li>
+                        <a href=" https://www.facebook.com/Nomadefestival/" target="_blank" class="fb_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.soundcloud.com/festivalnomade" target="_blank" class="sc_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://vimeo.com/festivalnomade" target="_blank" class="vi_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/festivalnomade/" target="_blank" class="ins_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://nomaderecords.bandcamp.com/" target="_blank" class="band_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.everfest.com/e/festival-nomade-purranque-chile" target="_blank" class="ever_icon icon"></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav especial-nav main-nav-wrap" id="main-nav-wrap">
+                    <a class="navbar-brand" href="#"></a>
+                    <li class="current"><a href="#about" class="smoothscroll">Nosotros</a></li>
+                    <li><a href="#practices" class="smoothscroll">Practicas</a></li>
+                    <li><a href="#lineUp" class="smoothscroll">Line Up</a></li>
+                    <li><a href="#routes" class="smoothscroll">Ruta</a></li>
+                    <li><a href="#ticket" class="smoothscroll">Tickets</a></li>
+                    <li><a href="#things" class="smoothscroll">Recomendaciones</a></li>
+                    <li><a href="#family" class="smoothscroll">Nuestra familia</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right mobile-nav" >
+                    <li ><a href="/en/"> English </a></li>
+                    <li class="line"><a href="" >/</a></li>
+                    <li ><a href="/es/"> Español </a></li>
+                    <li>
+                        <a href=" https://www.facebook.com/Nomadefestival/" target="_blank" class="fb_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.soundcloud.com/festivalnomade" target="_blank" class="sc_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://vimeo.com/festivalnomade" target="_blank" class="vi_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/festivalnomade/" target="_blank" class="ins_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://nomaderecords.bandcamp.com/" target="_blank" class="band_icon icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.everfest.com/e/festival-nomade-purranque-chile" target="_blank" class="ever_icon icon"></a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
         <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead"> {{.Site.Params.about_text_1}} </p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead"> {{.Site.Params.about_text_2}} </p>
-          </div>
-        </div>  
-      </div>
-    </section>
-
-       <!-- Portfolio Grid Section -->
-       <section class="portfolio" id="musica">
-        <div class="container">
-          <h2 class="text-center text-uppercase text-secondary mb-0">Musica</h2>
-          <img class="img-fluid mt-3  mb-5 d-block mx-auto" width="250" src="/images/line-circle-oscuro.png" alt="">
-          <div class="row">
-          {{ $.Scratch.Set "count" 1 }}
-          {{ range first 8 (where .Site.Pages "Section" "in" (slice "logos")) }} 
-            <div class="col-sm-6 col-lg-3">
-                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-{{$.Scratch.Get "count"}}"> {{ $.Scratch.Add "count" 1 }}
-                  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                      <i class="fa fa-search-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  {{ $image := .Resources.GetMatch "*.png" }}
-                  {{$title := .Title}}
-                  {{ with $image }}
-                    {{ $scaled := .Resize "1024x" }}
-                    <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
-                  {{ end }}
-                </a>
-              </div>  
-             
-          {{ end }} 
-  
-           
-          
-          </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FNomadefestival%2Fvideos%2F1949282105318061%2F&amp;show_text=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                <!-- <iframe  src="https://www.youtube.com/embed/wMNYmiXg_Z0" frameborder="0" allowfullscreen></iframe> -->
+            </div>
         </div>
-      </section>
-
-
-
-     <!-- Mercadito Section -->
-     <section class="bg-primary text-white mb-0  paral paralsec2" id="mercadito">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Mercadito</h2>
-        <img class="img-fluid mt-4 mb-5 d-block mx-auto" width="250" src="/images/line-circle.png" alt="">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead"> {{.Site.Params.about_text_1}} </p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead"> {{.Site.Params.about_text_2}} </p>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-
-    {{ partial "contactform.html" . }}
-
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Contacto</h4>
-            <p class="lead mb-0">  <a class="text-white" href="https://api.whatsapp.com/send?phone=56956024785"><i class="fa fa-fw fa-whatsapp"></i> Chatear con Whatsapp</a>
-              <br> +56956024785
-              {{.Site.Params.address_line_2}}            
-            </p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Social</h4>
-            {{ partial "social.html" . }}
-
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">Sobre {{.Title}}</h4>
-            <p class="lead mb-0">  {{.Site.Params.address_line_1}} 
-              <br> Acepto pagos con <a class="text-white" href='https://paypal.me/MariaPintoaller'>Paypal</a> {{.Site.Params.footer_right}} </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; {{.Title}} 2018</small>
-      </div>
     </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 col-md-offset-1 col-sm-offset-0 col-lg-5 col-lg-offset-2">
+                <h1 class="main-title">ABOUT</h1>
+                <p><span>Festival Nómade </span>  is an experience of exchange and reconnection that takes place on the coast in the 10th Region in Southern Chile <span> February 6 - 12, 2018 </span>.  It’s a multicultural gathering that promotes a simple lifestyle in terms of tangible material goods, and at the same time, presents a journey rich in sounds, trades, and cultures.</p>
+                <p>During its first days the festival takes shape as a platform for   <span>learning</span>,
+                giving space to practices from multiple disciplines and allowing for a more intimate exploration between all those participating in the experience. On the fourth day the celebration begins. It’s one anchored in a deep musical journey that gives life to a cultural symbiosis between ancient and contemporary sounds.</p>
+                <p>At  <span>Festival Nómade </span>  an environment is co-created in order to experience a new paradigm - one of togetherness and collaboration, where there are no spectators, but where everyone is an active member, open to exchange and to forming a community anchored in respect for land, culture, and diversity. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="responsive_img" src="/assets/landing_febrero/ABOUT_IMG-8d317ed7a445416d4bff4aeda2cd2f39913cd198434d172ae177cb6108032043.png" alt="About img 8d317ed7a445416d4bff4aeda2cd2f39913cd198434d172ae177cb6108032043">
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+ 
+
+  
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">
