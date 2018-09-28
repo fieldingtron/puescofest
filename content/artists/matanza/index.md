@@ -1,7 +1,6 @@
 ---
-title: "AvaniYogaRetreats"
-date: 2016-01-01
-image: avaniyogaretreats.png
+title: "Matazna"
+date: 2017-01-01
 draft: false
 headless : false
 

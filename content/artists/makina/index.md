@@ -1,5 +1,5 @@
 ---
-title: "Tiano Bless"
+title: "Makina Kandela"
 date: 2017-01-01
 draft: false
 headless : false
