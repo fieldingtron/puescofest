@@ -40,7 +40,7 @@
 .about-section {
     background-color: #3F273C;
     padding: 80px 0px;
-    background-image: url(landing_febrero/BG_ABOUT.jpg);
+    background-image: url(BG_ABOUT.jpg);
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -80,3 +80,13 @@ nav.sticky {
     box-shadow: 5px 1px 16px rgba(0,0,0,0.2);
 }
 
+.practices-section {
+    background-color: #f4efcf;
+    padding: 80px 0px;
+    min-height: 600px;
+    background-image: url(BG_PRACTICES.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
