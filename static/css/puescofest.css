@@ -70,8 +70,9 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
   font-family: "PAIHUENPRO";
-  font-size: 14px;
-  color: #e9cfc5;
+  font-size: 1.0em;
+  font-weight: 500;
+  color: #192f4f;
   letter-spacing: 0.5px; }
 
 .navbar-default .navbar-nav.navbar-right li a {
@@ -257,7 +258,7 @@ p span {
   color: #ae5959; }
 
 .lineUp-section {
-  background-color: #3F273C;
+  background-color: #192f4f;
   padding: 80px 0px;
   background-size: 100%;
   background-attachment: fixed;
@@ -266,7 +267,7 @@ p span {
   min-height: 600px; }
 
 .lineUp-section p span {
-  color: #ae5959; }
+  color: #348a87; }
 
 .lineUp-section h2 {
   font-family: "PAIHUENPRO";

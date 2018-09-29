@@ -91,8 +91,9 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
     font-family:  $title-font;
-    font-size: 14px;
-    color: $color4;
+    font-size: 1.0em;
+    font-weight: 500;
+    color: $color1;
     letter-spacing: 0.5px
 }
 
@@ -311,7 +312,7 @@ p span {
 }
 
 .lineUp-section {
-    background-color: #3F273C;
+    background-color: $color1;
     padding: 80px 0px;
     background-size: 100%;
     background-attachment: fixed;
@@ -321,7 +322,7 @@ p span {
 }
 
 .lineUp-section p span {
-    color: #ae5959
+    color: $color2;
 }
 
 .lineUp-section h2 {

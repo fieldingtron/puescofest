@@ -3,86 +3,8 @@
 </section>
 <!-- Nav Bar -->
 <section class="second-section" id="video">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand mobile" href="#">
-              </a>
-            </div>
+    {{ partial "navbar.html" . }}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav navbar-right" >
-                    <li ><a href="/en/"> English </a></li>
-                    <li class="line"><a href="" >/</a></li>
-                    <li ><a href="/es/"> Español </a></li>
-                    <li>
-                        <a href=" https://www.facebook.com/Nomadefestival/" target="_blank" class="fb_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.soundcloud.com/festivalnomade" target="_blank" class="sc_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://vimeo.com/festivalnomade" target="_blank" class="vi_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/festivalnomade/" target="_blank" class="ins_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://nomaderecords.bandcamp.com/" target="_blank" class="band_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.everfest.com/e/festival-nomade-purranque-chile" target="_blank" class="ever_icon icon"></a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav especial-nav main-nav-wrap" id="main-nav-wrap">
-                    <a class="navbar-brand" href="#"></a>
-                    <li class="current"><a href="#about" class="smoothscroll">Sobre</a></li>
-                    <li><a href="#practices" class="smoothscroll">Programa</a></li>
-                    <li><a href="#lineUp" class="smoothscroll">Line Up</a></li>
-                    <li><a href="#kayak" class="smoothscroll">Kayak</a></li>
-                    <li><a href="#routes" class="smoothscroll">Como Llegar</a></li>
-                    <li><a href="#camping" class="smoothscroll">Camping</a></li>
-                    <li><a href="#ticket" class="smoothscroll">Tickets</a></li>
-                    <li><a href="#buenvivir" class="smoothscroll">Buen Vivir</a></li>
-                    <li><a href="#contacto" class="smoothscroll">Contacto</a></li>
-
-                   
-                </ul>
-                <ul class="nav navbar-nav navbar-right mobile-nav" >
-                    <li ><a href="/en/"> English </a></li>
-                    <li class="line"><a href="" >/</a></li>
-                    <li ><a href="/es/"> Español </a></li>
-                    <li>
-                        <a href=" https://www.facebook.com/Nomadefestival/" target="_blank" class="fb_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.soundcloud.com/festivalnomade" target="_blank" class="sc_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://vimeo.com/festivalnomade" target="_blank" class="vi_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/festivalnomade/" target="_blank" class="ins_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://nomaderecords.bandcamp.com/" target="_blank" class="band_icon icon"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.everfest.com/e/festival-nomade-purranque-chile" target="_blank" class="ever_icon icon"></a>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
@@ -153,7 +75,7 @@
                 <!-- <h2>TO BE ANNOUNCED SOON</h2> -->
                 <div class="row">
                     {{ $.Scratch.Set "count" 1 }}
-                    {{ range first 8 (where .Site.RegularPages "Section" "in" (slice "artists")) }} 
+                    {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }} 
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                             <a href='#lineup-{{$.Scratch.Get "count"}}' class="open-popup-link">
                                 {{ $.Scratch.Add "count" 1 }}
@@ -162,7 +84,7 @@
                                     {{$title := .Title}}
                                     {{ $image := .Resources.GetMatch "band*.jpg" }}
                                         {{ with $image }}
-                                        {{ $scaled := .Resize "1024x" }}
+                                        {{ $scaled := .Resize "800x600" }}
                                             <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
                                         {{ end }}
                                 </div>
@@ -180,7 +102,7 @@
  <!--line up-->
 
  {{ $.Scratch.Set "count" 1 }}
-    {{ range first 8 (where .Site.RegularPages "Section" "in" (slice "artists")) }}
+    {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }}
         <div id='lineup-{{$.Scratch.Get "count"}}' class="mfp-hide line-up">
             {{ $.Scratch.Add "count" 1 }}
             <div class="cont">
