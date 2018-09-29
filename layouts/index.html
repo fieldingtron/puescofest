@@ -45,13 +45,17 @@
                 </ul>
                 <ul class="nav navbar-nav especial-nav main-nav-wrap" id="main-nav-wrap">
                     <a class="navbar-brand" href="#"></a>
-                    <li class="current"><a href="#about" class="smoothscroll">Nosotros</a></li>
-                    <li><a href="#practices" class="smoothscroll">Practicas</a></li>
+                    <li class="current"><a href="#about" class="smoothscroll">Sobre</a></li>
+                    <li><a href="#practices" class="smoothscroll">Programa</a></li>
                     <li><a href="#lineUp" class="smoothscroll">Line Up</a></li>
-                    <li><a href="#routes" class="smoothscroll">Ruta</a></li>
+                    <li><a href="#kayak" class="smoothscroll">Kayak</a></li>
+                    <li><a href="#routes" class="smoothscroll">Como Llegar</a></li>
+                    <li><a href="#camping" class="smoothscroll">Camping</a></li>
                     <li><a href="#ticket" class="smoothscroll">Tickets</a></li>
-                    <li><a href="#things" class="smoothscroll">Recomendaciones</a></li>
-                    <li><a href="#family" class="smoothscroll">Nuestra familia</a></li>
+                    <li><a href="#buenvivir" class="smoothscroll">Buen Vivir</a></li>
+                    <li><a href="#contacto" class="smoothscroll">Contacto</a></li>
+
+                   
                 </ul>
                 <ul class="nav navbar-nav navbar-right mobile-nav" >
                     <li ><a href="/en/"> English </a></li>
@@ -93,7 +97,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-5 col-md-offset-1 col-sm-offset-0 col-lg-5 col-lg-offset-2">
-                <h1 class="main-title">ABOUT</h1>
+                <h1 class="main-title">Nosotros</h1>
                 <p><span>Festival Nómade </span>  is an experience of exchange and reconnection that takes place on the coast in the 10th Region in Southern Chile <span> February 6 - 12, 2018 </span>.  It’s a multicultural gathering that promotes a simple lifestyle in terms of tangible material goods, and at the same time, presents a journey rich in sounds, trades, and cultures.</p>
                 <p>During its first days the festival takes shape as a platform for   <span>learning</span>,
                 giving space to practices from multiple disciplines and allowing for a more intimate exploration between all those participating in the experience. On the fourth day the celebration begins. It’s one anchored in a deep musical journey that gives life to a cultural symbiosis between ancient and contemporary sounds.</p>
@@ -112,25 +116,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
-                <h1 class="main-title">PRÁCTICAS Y CONOCIMIENTOS</h1>
+                <h1 class="main-title">Programa</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 col-md-offset-1 col-sm-offset-0 col-lg-3 col-lg-offset-2 ">
-                <p> A Festival Nómade asisten facilitadores de procesos que guían prácticas de distintos oficios y disciplinas. Estas prácticas fomentan un entorno cercano e imparcial, donde nos identificamos como comunidad, creamos vínculos, intercambiamos visiones de mundo y nos conectamos desde diferentes ramas, adquiriendo simultáneamente nuevos conocimientos tangibles e intangibles.</p>
-                <p> Cuando ya nos conocemos a nosotros y a nuestro entorno… viene la celebración. Algunas de las talleres son:</p>
-            </div>
+                Viene pronto
+             </div>
             <div class="col-md-3 col-sm-12">
-                <h3>Actividades Holisticas </h3>
-                <p>Text:  -acroyoga, vinyasa, kundalini, meditación.</p>
-                <h3>Actividades Outdoor </h3>
-                <p>Surfing  - Hiking - Slackline</p>
-                <h3>Sustentabilidad</h3>
-                <p>Taller de ladrillo - Bosque Comestible, mas...</p>
-                <h3>Talleres/Charlas/Conversatorio</h3>
-                <p>La cultura del decrecimiento, Cuenta cuentos y mas...</p>
-                <p class="min">*Todas estas prácticas y charlas son previa inscripción en el Punto de Informaciones, ubicado dentro de la Aldea Nómade. Casi todas las actividades son gratuitas y con cupos limitados. </p>
-            </div>
+                <h3> mas info </h3>
+
+
+             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -185,7 +182,7 @@
 
  {{ $.Scratch.Set "count" 1 }}
     {{ range first 8 (where .Site.RegularPages "Section" "in" (slice "artists")) }}
-        <div id='lineup-{{$.Scratch.Get "count"}}' class="mfp-hide line-up mfp-zoom">
+        <div id='lineup-{{$.Scratch.Get "count"}}' class="mfp-hide line-up">
             {{ $.Scratch.Add "count" 1 }}
             <div class="cont">
                 <div class="top">
