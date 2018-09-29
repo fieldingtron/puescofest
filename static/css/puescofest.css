@@ -55,7 +55,7 @@ nav.sticky {
   width: 85%; }
 
 .navbar-default {
-  background: #f4efd0;
+  background: #f5f0d4;
   border: 0px;
   border-radius: 0px;
   margin-bottom: 0px;
@@ -71,7 +71,7 @@ nav.sticky {
 .navbar-default .navbar-nav li a {
   font-family: "PAIHUENPRO";
   font-size: 14px;
-  color: #a99e95;
+  color: #e9cfc5;
   letter-spacing: 0.5px; }
 
 .navbar-default .navbar-nav.navbar-right li a {
@@ -127,7 +127,7 @@ nav.sticky {
 
 .navbar-right li a.fb_icon,
 .redes li a.fb_icon {
-  background-image: url(ICON_FB.png); }
+  background-image: url(/images/ICON_FB.png); }
 
 .navbar-right li:hover a.fb_icon,
 .redes li:hover a.fb_icon {
@@ -177,7 +177,7 @@ nav.sticky {
 
 .second-section {
   padding: 130px 0px 80px;
-  background-image: url(landing_febrero/BACKGROUND_WOOD.jpg);
+  background-image: url("/images/water.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -189,9 +189,9 @@ nav.sticky {
   height: 420px; }
 
 .about-section {
-  background-color: #3F273C;
+  background-color: #192f4f;
   padding: 80px 0px;
-  background-image: url(BG_ABOUT.jpg);
+  background-image: url("/images/BG_ABOUT.jpg");
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
