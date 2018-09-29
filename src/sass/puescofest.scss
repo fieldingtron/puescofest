@@ -6,17 +6,31 @@ $color3: #f5f0d4;
 $color4: #e9cfc5;
 $min-section-height: 400px;
 $section-padding:  80px 0px;
+$font-size-section: 1.3em;
+$letter-spacing-section: 0.5px;
+$line-height-section: 1.5em;
+$padding-sides-section: 25px;
 
 .light-back {
     background-color: $color3;
     min-height: $min-section-height;
     padding: $section-padding;
+    font-size: $font-size-section;
+    letter-spacing: $letter-spacing-section;
+    line-height: $line-height-section;
+    padding-left: $padding-sides-section;
+    padding-right:$padding-sides-section;
 }
 
 .dark-back {
     background-color: $color1;
     min-height: $min-section-height;
     padding: $section-padding;
+    font-size: $font-size-section;
+    letter-spacing: $letter-spacing-section;
+    line-height: $line-height-section;
+    padding-left: $padding-sides-section;
+    padding-right:$padding-sides-section;
 }
 
 * {

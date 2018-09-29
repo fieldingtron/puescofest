@@ -1,12 +1,22 @@
 .light-back {
   background-color: #f5f0d4;
   min-height: 400px;
-  padding: 80px 0px; }
+  padding: 80px 0px;
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  padding-left: 25px;
+  padding-right: 25px; }
 
 .dark-back {
   background-color: #192f4f;
   min-height: 400px;
-  padding: 80px 0px; }
+  padding: 80px 0px;
+  font-size: 1.3em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  padding-left: 25px;
+  padding-right: 25px; }
 
 * {
   font-family: 'Open Sans', sans-serif; }
