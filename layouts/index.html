@@ -4,7 +4,6 @@
 <!-- Nav Bar -->
 <section class="second-section" id="video">
     {{ partial "navbar.html" . }}
-
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
@@ -15,92 +14,39 @@
 </section>
 
 <section class="about-section" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-5 col-md-offset-1 col-sm-offset-0 col-lg-5 col-lg-offset-2">
-                <h1 class="main-title">Nosotros</h1>
-                <p><span>Festival Nómade </span>  is an experience of exchange and reconnection that takes place on the coast in the 10th Region in Southern Chile <span> February 6 - 12, 2018 </span>.  It’s a multicultural gathering that promotes a simple lifestyle in terms of tangible material goods, and at the same time, presents a journey rich in sounds, trades, and cultures.</p>
-                <p>During its first days the festival takes shape as a platform for   <span>learning</span>,
-                giving space to practices from multiple disciplines and allowing for a more intimate exploration between all those participating in the experience. On the fourth day the celebration begins. It’s one anchored in a deep musical journey that gives life to a cultural symbiosis between ancient and contemporary sounds.</p>
-                <p>At  <span>Festival Nómade </span>  an environment is co-created in order to experience a new paradigm - one of togetherness and collaboration, where there are no spectators, but where everyone is an active member, open to exchange and to forming a community anchored in respect for land, culture, and diversity. </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="responsive_img" src="/assets/ABOUT_IMG-8d317ed7a445416d4bff4aeda2cd2f39913cd198434d172ae177cb6108032043.png" alt="About img 8d317ed7a445416d4bff4aeda2cd2f39913cd198434d172ae177cb6108032043">
-            </div>
-        </div>
-    </div>
+    {{ partial "about.html" . }}
 </section>
 
 <section class="practices-section" id="practices">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
-                <h1 class="main-title">Programa</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1 col-sm-offset-0 col-lg-3 col-lg-offset-2 ">
-                Viene pronto
-             </div>
-            <div class="col-md-3 col-sm-12">
-                <h3> mas info </h3>
-
-
-             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="responsive_img" src="/assets/PRACTICES_IMG-aa6b1a8c7c28c306c60bdcfad1d57d1514e21157694234cd9ed3d5574404adae.png" alt="Practices img aa6b1a8c7c28c306c60bdcfad1d57d1514e21157694234cd9ed3d5574404adae">
-            </div>
-        </div>
-    </div>
+    {{ partial "programa.html" . }}
 </section> 
  
 <section class="lineUp-section" id="lineUp">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h1 class="main-title">Line Up</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <p>Sobre el escenario de Festival Nómade convergen artistas con una búsqueda anclada al rescate de las raíces sonoras de América Latina y el mundo. Folcloristas y productores de música electrónica se reúnen a compartir parte de sus investigaciones, generando colaboraciones espontáneas y<span>   construyendo un puente que conecta la esencia sonora </span>  de los pueblos originarios con la escena bailable del mundo entero. El line up concreto de la versión 2018, estará disponible pronto.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <!-- <h2>TO BE ANNOUNCED SOON</h2> -->
-                <div class="row">
-                    {{ $.Scratch.Set "count" 1 }}
-                    {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }} 
-                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                            <a href='#lineup-{{$.Scratch.Get "count"}}' class="open-popup-link">
-                                {{ $.Scratch.Add "count" 1 }}
-                                <div class="sphere">
-                                    <h4>{{.Title}}</h4>
-                                    {{$title := .Title}}
-                                    {{ $image := .Resources.GetMatch "band*.jpg" }}
-                                        {{ with $image }}
-                                        {{ $scaled := .Resize "800x600" }}
-                                            <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
-                                        {{ end }}
-                                </div>
-                            </a>
-                        </div>
-                    {{ end}}
-              
-
-                </div>
-            </div>
-        </div>
-    </div>
+    {{ partial "lineup.html" . }}
 </section>
-  
- <!--line up-->
 
+<section class="kayak-section light-back" id="kayak">
+    {{ partial "kayak.html" . }}
+</section> 
+<section class="como-llegar-section dark-back" id="routes">
+    {{ partial "como-llegar.html" . }}
+</section> 
+<section class="camping-section light-back" id="camping">
+    {{ partial "camping.html" . }}
+</section> 
+<section class="tickets-section dark-back" id="tickets">
+    {{ partial "tickets.html" . }}
+</section> 
+<section class="buen-vivir-section light-back" id="buen-vivir">
+    {{ partial "buen-vivir.html" . }}
+</section> 
+<section class="contact-section dark-back" id="contacto">
+    {{ partial "contacto.html" . }}
+</section> 
+    
+
+
+ <!--line up-->
  {{ $.Scratch.Set "count" 1 }}
     {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }}
         <div id='lineup-{{$.Scratch.Get "count"}}' class="mfp-hide line-up">

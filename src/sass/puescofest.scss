@@ -4,6 +4,20 @@ $color1: #192f4f;
 $color2: #348a87;
 $color3: #f5f0d4;
 $color4: #e9cfc5;
+$min-section-height: 400px;
+$section-padding:  80px 0px;
+
+.light-back {
+    background-color: $color3;
+    min-height: $min-section-height;
+    padding: $section-padding;
+}
+
+.dark-back {
+    background-color: $color1;
+    min-height: $min-section-height;
+    padding: $section-padding;
+}
 
 * {
     font-family: 'Open Sans', sans-serif; 

@@ -1,3 +1,13 @@
+.light-back {
+  background-color: #f5f0d4;
+  min-height: 400px;
+  padding: 80px 0px; }
+
+.dark-back {
+  background-color: #192f4f;
+  min-height: 400px;
+  padding: 80px 0px; }
+
 * {
   font-family: 'Open Sans', sans-serif; }
 
