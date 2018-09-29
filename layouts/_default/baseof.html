@@ -12,23 +12,18 @@
             <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
         {{ end }}
 
-        <!-- {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }} -->
-
-        {{ block "nomade" . }}{{ partial "site/nomade.html" . }}{{ end }}
-
+        {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }} 
 
     </head>
     <body id="page-top">
 
-        <!-- {{ block "navbar" . }}{{ partial "site/navbar.html" . }}{{ end }} -->
-
     
-            {{ block "main" . }}{{ end }}
+        {{ block "main" . }}{{ end }}
      
 
         {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
 
-        <!-- {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }} -->
+        {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
 
     </body>
 </html>
