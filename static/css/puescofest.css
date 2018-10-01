@@ -141,59 +141,9 @@ nav.sticky {
   background-size: 20px auto;
   display: block; }
 
-.navbar-right li a.fb_icon,
-.redes li a.fb_icon {
-  background-image: url(/images/ICON_FB.png); }
-
-.navbar-right li:hover a.fb_icon,
-.redes li:hover a.fb_icon {
-  background-image: url(landing_febrero/ICON_FB_hover.png); }
-
-.navbar-right li a.sc_icon,
-.redes li a.sc_icon {
-  background-image: url(landing_febrero/ICON_SC.png);
-  background-size: 33px auto; }
-
-.navbar-right li:hover a.sc_icon,
-.redes li:hover a.sc_icon {
-  background-image: url(landing_febrero/ICON_SC_hover.png); }
-
-.navbar-right li a.vi_icon,
-.redes li a.vi_icon {
-  background-image: url(landing_febrero/ICON_VI.png); }
-
-.navbar-right li:hover a.vi_icon,
-.redes li:hover a.vi_icon {
-  background-image: url(landing_febrero/ICON_VI_hover.png); }
-
-.navbar-right li a.ins_icon,
-.redes li a.ins_icon {
-  background-image: url(landing_febrero/ICON_IN.png); }
-
-.navbar-right li:hover a.ins_icon,
-.redes li:hover a.ins_icon {
-  background-image: url(landing_febrero/ICON_IN_hover.png); }
-
-.navbar-right li a.band_icon,
-.redes li a.band_icon {
-  background-image: url(landing_febrero/ICON_BC.png);
-  background-size: 33px auto; }
-
-.navbar-right li:hover a.band_icon,
-.redes li:hover a.band_ico {
-  background-image: url(landing_febrero/ICON_BC_hover.png); }
-
-.navbar-right li a.ever_icon,
-.redes li a.ever_icon {
-  background-image: url(landing_febrero/ICON_EVER.png); }
-
-.navbar-right li:hover a.ever_icon,
-.redes li:hover a.ever_icon {
-  background-image: url(landing_febrero/ICON_EVER_hover.png); }
-
 .second-section {
   padding: 130px 0px 80px;
-  background-image: url("/images/water.jpg");
+  background-image: url("/images/background_river05.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
