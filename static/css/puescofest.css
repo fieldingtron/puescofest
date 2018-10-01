@@ -232,6 +232,15 @@ h1.main-title {
   color: #ae5959;
   text-transform: uppercase; }
 
+h1.sub-title {
+  font-family: "PAIHUENPRO";
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  color: #ae5959;
+  text-transform: uppercase; }
+
 h1.second {
   font-family: "PAIHUENPRO";
   font-size: 40px;
