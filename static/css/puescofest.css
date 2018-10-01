@@ -41,11 +41,6 @@ nav.sticky {
   box-shadow: 5px 1px 16px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 1px 16px rgba(0, 0, 0, 0.3); }
 
-.navbar-default .navbar-nav.especial-nav {
-  float: none;
-  margin: 0 auto;
-  width: 68%; }
-
 .navbar-default .navbar-nav.navbar-right.mobile-nav {
   display: none; }
 
@@ -322,7 +317,7 @@ p span {
 .lineUp-section .sphere h4 {
   margin-top: 0px;
   color: #F2EFCF;
-  font-size: 18px;
+  font-size: 25px;
   font-family: "PAIHUENPRO";
   letter-spacing: 1px;
   position: absolute;
