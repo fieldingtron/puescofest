@@ -150,8 +150,7 @@ nav.sticky {
   position: relative; }
 
 .second-section iframe {
-  width: 800px;
-  height: 420px; }
+  width: 100%; }
 
 .about-section {
   background-color: #192f4f;
@@ -627,8 +626,7 @@ footer h6 a:hover {
   height: 100%;
   z-index: 1043;
   position: fixed;
-  outline: none !important;
-  -webkit-backface-visibility: hidden; }
+  outline: none !important; }
 
 .mfp-container {
   text-align: center;
