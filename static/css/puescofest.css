@@ -234,7 +234,7 @@ h1.main-title {
 
 h1.sub-title {
   font-family: "PAIHUENPRO";
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: 2px;
   margin-bottom: 30px;
   line-height: 30px;
@@ -347,7 +347,8 @@ p span {
   z-index: 100;
   opacity: 1;
   -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s; }
+  transition: ease-in-out 0.3s;
+  word-spacing: 100vw; }
 
 .lineUp-section .sphere::before {
   position: absolute;
