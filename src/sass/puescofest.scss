@@ -71,7 +71,7 @@ nav.sticky {
 }
 
 .first-section {
-    background: url(/assets/header-everything.jpg);
+    background: url(/images/background-main-medium.jpg);
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -1352,11 +1352,11 @@ screen and (max-height: 300px) {
 }
 
 @media (max-width: 767px) {
-    .responsive_img {
-        width: 60%;
-        margin: 30px auto 0px;
-        display: block
-    }
+    // .responsive_img {
+    //     width: 60%;
+    //     margin: 30px auto 0px;
+    //     display: block
+    // }
     .line-up {
         width: 90%
     }
@@ -1419,25 +1419,7 @@ screen and (max-height: 300px) {
     .media-right {
         display: block
     }
-    .ticket-section .cont-ticket .bottom .media .media-left {
-        margin-bottom: 15px;
-        text-align: center;
-        padding: 0px
-    }
-    .ticket-section .cont-ticket .bottom {
-        padding: 20px 20px 20px 20px
-    }
-    .ticket-section .cont-ticket .bottom .media .media-body {
-        width: initial
-    }
-    .ticket-section .cont-ticket .bottom .media .media-body p {
-        text-align: left
-    }
-    .responsive_img {
-        width: 80%;
-        margin: 30px auto 0px;
-        display: block
-    }
+
 }
 
 @media (max-width: 450px) {
@@ -1445,7 +1427,7 @@ screen and (max-height: 300px) {
         margin-top: 0px
     }
     .first-section {
-        background: url(HEADER_BACKGROUND.jpg)
+        background: url(/images/mobilebackground2.jpg)
     }
     .second-section {
         background: url(landing_febrero/BACKGROUND_WOOD.jpg);
