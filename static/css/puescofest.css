@@ -155,11 +155,10 @@ nav.sticky {
 .about-section {
   background-color: #192f4f;
   padding: 80px 0px;
-  background-image: url("/images/BG_ABOUT.jpg");
-  background-size: 100%;
+  background-image: url("/images/araucarias1_bckgr.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   min-height: 600px; }
 
 .about-section p,
