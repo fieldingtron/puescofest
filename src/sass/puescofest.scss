@@ -200,7 +200,7 @@ nav.sticky {
     width: 100%;
 }
 
-.about-section {
+.about-section, .como-llegar-section, .tickets-section, .contact-section {
     background-color: $color1;
     padding: 80px 0px;
     background-image: url('/images/araucarias1_bckgr.png');
@@ -250,7 +250,7 @@ h1.second {
     text-transform: uppercase
 }
 
-.practices-section {
+.practices-section, .camping-section, .buen-vivir-section {
     background-color: $color3;
     padding: 80px 0px;
     min-height: 600px;
