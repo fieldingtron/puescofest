@@ -344,14 +344,12 @@ p span {
 .routes-section {
   background-color: #f4efcf;
   padding: 80px 0px;
-  background-image: url(landing_febrero/BG_ROUTES.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: bottom; }
 
 .ticket-section {
-  background: url(landing_febrero/BACKGROUND_WOOD.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -487,7 +485,6 @@ p.min {
   color: #ae5959; }
 
 .top-footer {
-  background: url(landing_febrero/BACKGROUND_WOOD.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1158,10 +1155,8 @@ img.mfp-img {
   .first-section {
     background: url(/images/mobilebackground2.jpg); }
   .second-section {
-    background: url(landing_febrero/BACKGROUND_WOOD.jpg);
     background-size: initial; }
   .top-footer {
-    background: url(landing_febrero/BACKGROUND_WOOD.jpg);
     background-size: initial; }
   .ticket-section .cont-ticket .top figure img {
     width: 210px; }
