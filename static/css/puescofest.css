@@ -142,9 +142,12 @@ nav.sticky {
   padding: 0px;
   margin: 0 auto; }
 
+.redes li {
+  float: left; }
+
 .navbar-right li a.icon,
 .redes li a.icon {
-  height: 53px;
+  height: 20px;
   width: 44px;
   background-repeat: no-repeat;
   background-position: center;

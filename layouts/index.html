@@ -77,6 +77,36 @@
                 <div class="bottom">
                     <h3>{{.Title}}</h3>
                     <p> {{.Content}} </p>
+                    <div class="text-center">
+                            <ul class="redes">
+                                    {{ if isset .Params "soundcloud" }} 
+                                    <li>
+                                            <a href='{{ index .Params "soundcloud" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-soundcloud" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "facebook" }} 
+                                    <li>
+                                            <a href='{{ index .Params "facebook" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "instagram" }} 
+                                    <li>
+                                            <a href='{{ index .Params "instagram" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "spotify" }} 
+                                    <li>
+                                            <a href='{{ index .Params "spotify" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-spotify" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "youtube" }} 
+                                    <li>
+                                            <a href='{{ index .Params "youtube" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-youtube" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                
+                            </ul>
+                        </div>
                     <!-- <div class="text-center">
                         <ul class="redes">
                             <li>
