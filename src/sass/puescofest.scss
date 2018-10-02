@@ -251,14 +251,25 @@ h1.second {
 }
 
 .practices-section {
-    background-color: #f4efcf;
+    background-color: $color3;
     padding: 80px 0px;
     min-height: 600px;
-    background-image: url(BG_PRACTICES.jpg);
-    background-size: cover;
+    background-image: url("/images/kultrun_bckgr2.png");
+    // background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: left;
+}
+
+
+.kayak-section {
+    padding: 80px 0px;
+    background-image: url('/images/kayak_bckgr2.png');
+    // background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 600px
 }
 
 .practices-section h3 {

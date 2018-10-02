@@ -197,14 +197,21 @@ h1.second {
   text-transform: uppercase; }
 
 .practices-section {
-  background-color: #f4efcf;
+  background-color: #f5f0d4;
   padding: 80px 0px;
   min-height: 600px;
-  background-image: url(BG_PRACTICES.jpg);
-  background-size: cover;
+  background-image: url("/images/kultrun_bckgr2.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: left; }
+
+.kayak-section {
+  padding: 80px 0px;
+  background-image: url("/images/kayak_bckgr2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 600px; }
 
 .practices-section h3 {
   margin-top: 0px;
