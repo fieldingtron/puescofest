@@ -283,12 +283,12 @@ h1.second {
 
 .kayak-section {
     padding: 80px 0px;
-    background-image: url('/images/kayak_bckgr2.png');
-    // background-size: 100%;
+    background-image: url('/images/kayak_bckgr3b.png');
+    // background-size: 40%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: right;
-    min-height: 600px
+    // min-height: 600px
 }
 
 .practices-section h3 {
@@ -1253,6 +1253,9 @@ screen and (max-height: 300px) {
     .navbar-default .navbar-nav.especial-nav {
         width: 100%
     }
+    .kayak-section {
+        background-image:none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1269,6 +1272,7 @@ screen and (max-height: 300px) {
     .navbar-default .navbar-form {
         border: 0px
     }
+  
 }
 
 @media (max-width: 991px) {
