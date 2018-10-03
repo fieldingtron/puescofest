@@ -95,9 +95,10 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
   font-family: "PAIHUENPRO";
-  font-size: 1.05em;
+  font-size: 1.5em;
   font-weight: 500;
   color: #192f4f;
+  padding: 15px 5px;
   letter-spacing: 0.5px; }
 
 .navbar-default .navbar-nav.navbar-right li a {
@@ -1070,8 +1071,8 @@ img.mfp-img {
 
 @media (max-width: 1024px) {
   .navbar-default .navbar-nav li a {
-    font-size: .9em;
-    padding: 15px 10px; }
+    font-size: 1.4em;
+    padding: 15px 5px; }
   .navbar-default .navbar-nav.especial-nav li a {
     padding: 15px 10px; }
   .navbar-right li a.icon,
@@ -1084,7 +1085,10 @@ img.mfp-img {
 
 @media (max-width: 991px) {
   .line-up {
-    width: 80%; } }
+    width: 80%; }
+  .navbar-default .navbar-nav li a {
+    font-size: 1.1em;
+    padding: 15px 5px; } }
 
 @media (max-width: 860px) {
   .navbar-default .navbar-nav.navbar-right {

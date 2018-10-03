@@ -131,9 +131,10 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
     font-family:  $title-font;
-    font-size: 1.05em;
+    font-size: 1.5em;
     font-weight: 500;
     color: $color1;
+    padding: 15px 5px;
     letter-spacing: 0.5px
 }
 
@@ -1264,8 +1265,8 @@ screen and (max-height: 300px) {
 
 @media (max-width: 1024px) {
     .navbar-default .navbar-nav li a {
-        font-size: .9em;
-        padding: 15px 10px
+        font-size: 1.4em;
+        padding: 15px 5px
     }
     .navbar-default .navbar-nav.especial-nav li a {
         padding: 15px 10px
@@ -1285,6 +1286,10 @@ screen and (max-height: 300px) {
 
     .line-up {
         width: 80%
+    }
+    .navbar-default .navbar-nav li a {
+        font-size: 1.1em;
+        padding: 15px 5px
     }
 }
 
