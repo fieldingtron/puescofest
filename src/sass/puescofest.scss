@@ -131,10 +131,10 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
     font-family:  $title-font;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 500;
     color: $color1;
-    padding: 15px 5px;
+    padding: 17px 8px;
     letter-spacing: 0.5px
 }
 
@@ -1254,22 +1254,10 @@ screen and (max-height: 300px) {
     }
 }
 
-@media (max-width: 1100px) {
-    .navbar-default .navbar-nav.especial-nav li a {
-        position: relative;
-        display: block;
-        padding: 15px 12px;
-        line-height: 25px
-    }
-}
-
 @media (max-width: 1024px) {
     .navbar-default .navbar-nav li a {
-        font-size: 1.4em;
-        padding: 15px 5px
-    }
-    .navbar-default .navbar-nav.especial-nav li a {
-        padding: 15px 10px
+        font-size: 1.3em;
+        padding: 15px 8px
     }
     .navbar-right li a.icon,
     .redes li a.icon {

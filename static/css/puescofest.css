@@ -95,10 +95,10 @@ nav.sticky {
 
 .navbar-default .navbar-nav li a {
   font-family: "PAIHUENPRO";
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 500;
   color: #192f4f;
-  padding: 15px 5px;
+  padding: 17px 8px;
   letter-spacing: 0.5px; }
 
 .navbar-default .navbar-nav.navbar-right li a {
@@ -1062,19 +1062,10 @@ img.mfp-img {
   .navbar-default .navbar-nav.especial-nav {
     width: 100%; } }
 
-@media (max-width: 1100px) {
-  .navbar-default .navbar-nav.especial-nav li a {
-    position: relative;
-    display: block;
-    padding: 15px 12px;
-    line-height: 25px; } }
-
 @media (max-width: 1024px) {
   .navbar-default .navbar-nav li a {
-    font-size: 1.4em;
-    padding: 15px 5px; }
-  .navbar-default .navbar-nav.especial-nav li a {
-    padding: 15px 10px; }
+    font-size: 1.3em;
+    padding: 15px 8px; }
   .navbar-right li a.icon,
   .redes li a.icon {
     height: 48px;
