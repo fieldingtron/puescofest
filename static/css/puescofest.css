@@ -1070,7 +1070,7 @@ img.mfp-img {
 
 @media (max-width: 1024px) {
   .navbar-default .navbar-nav li a {
-    font-size: 0.9em;
+    font-size: .9em;
     padding: 15px 10px; }
   .navbar-default .navbar-nav.especial-nav li a {
     padding: 15px 10px; }
@@ -1083,27 +1083,29 @@ img.mfp-img {
     border: 0px; } }
 
 @media (max-width: 991px) {
-  .ticket-section .cont-ticket .top {
-    padding: 40px 40px 40px 40px; }
-  .ticket-section .cont-ticket .top figure {
-    position: initial;
-    margin-bottom: 20px;
-    text-align: center; }
   .line-up {
     width: 80%; } }
 
 @media (max-width: 860px) {
   .navbar-default .navbar-nav.navbar-right {
-    display: none; } }
+    display: none; }
+  .navbar-default .navbar-nav li a {
+    font-size: 1.0em;
+    padding: 15px 10px; } }
 
 @media (max-width: 767px) {
   .line-up {
     width: 90%; }
   .navbar-header {
     border: none; }
+  .navbar-default .navbar-nav li a {
+    font-size: 1.6em;
+    padding: 15px 10px; }
   .navbar-default .navbar-brand.mobile {
     display: block; }
   .navbar-default .especial-nav .navbar-brand {
+    display: none; }
+  .navbar-brand {
     display: none; }
   .navbar-default .navbar-nav {
     text-align: center; }
