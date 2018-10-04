@@ -22,7 +22,7 @@
                                 {{$title := .Title}}
                                 {{ $image := .Resources.GetMatch "band*.jpg" }}
                                     {{ with $image }}
-                                    {{ $scaled := .Resize "800x600" }}
+                                    {{ $scaled := .Fill "250x188" }}
                                         <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
                                     {{ end }}
                             </div>
