@@ -1,3 +1,7 @@
+.pin-map {
+  height: 20px;
+  width: 11px; }
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
