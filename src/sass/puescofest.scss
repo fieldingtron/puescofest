@@ -347,7 +347,7 @@ p span {
 .lineUp-section .sphere {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    // border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -355,7 +355,10 @@ p span {
     margin: 30px auto 0px;
     position: relative;
     z-index: 10;
-    text-align: center
+    text-align: center;
+
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
 .lineUp-section .sphere h4 {
