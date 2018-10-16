@@ -265,6 +265,16 @@ h1.main-title {
     text-transform: uppercase
 }
 
+.sub-title-smaller {
+    font-family: $title-font;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: #ae5959;
+    text-transform: uppercase
+}
+
 h1.second {
     font-family: $title-font;
     font-size: 40px;
@@ -1435,3 +1445,13 @@ screen and (max-height: 300px) {
 	font-weight: normal;
 	font-style: normal;
 }
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }

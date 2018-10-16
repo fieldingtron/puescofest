@@ -6,22 +6,76 @@
             <p><strong> Puescofest es una celebracion por los rios del mundo</strong></p> 
             <p>Promovemos el cuidado del territorio ancestral donde nos encontramos en
                 Puesco, Curarrehue, Chile. </p>
-                <p> Luchamos por la defensa del territorio y también celebramos la conservación de este hermoso lugar. </p>
-                <p> Este 2018 se cumple el V Aniversario de PuescoFest, durante estos 4 días y 3 noches ofrecemos: camping, competencias internacionales de kayak, música en vivo, cocinerías locales, artesanías, exposición de iniciativas y problemáticas medioambientales, talleres y conversatorios inspirados en la filosofía del Küme Mognen “ Buen Vivir” en Mapudungun,
-                    actividades familiares, arte, danza, ofrendas, terapias naturales, yoga y más! </p>
+                <p>
+                        Invitamos al espectador a sumergirse en la vibración del agua, afluente, abundante, sonora, nutritiva, limpiadora y viajera de los causes de La Tierra en esta celebración por los Ríos Libres en Puesco, Curarrehue - Chile. 
+                </p>
+                <p>
+                        En este vibrar sonoro podemos experimentar el sueño en ese incesante movimiento del rio que a la vez refleja el universo. 
+                </p>
+                <p>
+                        Sueño que no solo es dormir, es ensoñar una realidad como un propósito a concretar. Donde las tejedoras en los “atrapasueños” canalizan a través de su geometría sagrada y trasmiten sanación en cada punto que trazan.
+                </p>  
+               
+              
+    
+
+
             </div>
-            <div class="col-sm-6">
-                    <img class="img-responsive" src="/images/puescofest-sobre1.jpg" alt="sobre puescofest">
-                    <br>
-                    <br>
+            <div class="col-sm-6 no-gutter">
+                   
+                        <div id="mainSlider" class="carousels slide" data-ride="carousel">
+                            <!-- <ol class="carousel-indicators">
+                              {{ with .Resources.ByType "image" }}
+                              {{ $.Scratch.Set "count" 0 }}
+                              {{ range . }}
+                                {{ if eq ($.Scratch.Get "count") 0}}
+                                <li data-target="#mainSlider" class="active" data-slide-to='{{$.Scratch.Get "count"}}' class="active"></li>
+                                {{else}}
+                                <li data-target="#mainSlider" data-slide-to='{{$.Scratch.Get "count"}}'></li>
+                                {{end}}        
+                                {{ $.Scratch.Add "count" 1 }}
+                              {{ end }}
+                              {{ end }}
+                            </ol> -->
+                          
+                            <div class="carousel-inner" role="listbox">
+                                {{ with .Resources.Match "tall*" }}
+                                {{ $.Scratch.Set "count" 0 }}
 
-                    <img class="img-responsive" src="/images/puescofest-sobre2.jpg" alt="sobre puescofest 2">
-                    <br>
-                    <br>
+                                {{ range . }}
+                                {{ if hasPrefix .Name "tall"}}
+                                    {{ if eq ($.Scratch.Get "count") 0}}  
+                                      <div class='item active'>
+                                    {{else}}
+                                      <div class='item'>
+                                    {{end}}   
+                                    
 
-                    <img class="img-responsive" src="/images/puescofest-sobre3.jpg" alt="sobre puescofest 3">
+                                    {{ $imageResized := (.Fill "450x680") }} 
+                                    <img  class="d-block w-100" src="{{ $imageResized.RelPermalink }}" /> 
+                                     <!-- <img  src="{{.Name  }}" alt="Slider image {{.Name  }}"> -->
+                                </div>
+                                    {{ $.Scratch.Add "count" 1 }}
+                                {{end}} 
+                              {{ end }}
+                              {{ end }}</div>
+                            </div>
+                            <p >
+                                <br>
+                                    Las formas fluyen entre los colores cielo, agua y fuego siendo inevitable la presencia del verde y los marrones donde la naturaleza es nuestra directora artística.
+            
+                            </p>  
 
+                            <p>
+                                      Este 2018 se cumple el V Aniversario de PuescoFest, que durante estos 4 días y 3 noches incentivamos el autocuidado y la contemplación creando ambientes de descanso y recreación para sus visitantes junto a una cartelera de más de 20 artistas musicales, una competencia internacional de kayak, camping en un lugar de abundancia natural, cocinería local y consciente, talleres recreativos y para el desarrollo personal, conversatorios inspirados en la filosofía del Küme Mognen (Buen Vivir en Mapudungun), danza para enfocar energía y concentración en el momento presente, arte para expandir nuestro ser interno, yoga para unir nuestro cuerpo y alma, entre otros.
+              
+                              </p>    
+                            
+                            </div>
 
+                             
+
+                
             </div>
         </div>
     </div> 
