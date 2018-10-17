@@ -1144,6 +1144,8 @@ img.mfp-img {
     padding: 15px 10px; } }
 
 @media (max-width: 767px) {
+  .light-back, .dark-back, .light-back2, .dark-back2 {
+    background-image: none; }
   .line-up {
     width: 90%; }
   .navbar-header {

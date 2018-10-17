@@ -35,7 +35,7 @@
                                         <div class='item'>
                                     {{end}}   
                                     {{ $imageResized := (.Fill "600x480") }} 
-                                        <img  class="d-block w-100" src="{{ $imageResized.RelPermalink }}" alt="Slider image {{.Name  }}"> />
+                                        <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" alt="Slider image {{.Name  }}"> 
                                         </div>
                                     {{ $.Scratch.Add "count" 1 }}
                                 {{ end }}
@@ -48,22 +48,10 @@
 
 
             </div>
-            <div class="col-sm-6 no-gutter">
-                   
+            <div class="col-sm-6">
+                   <br/>
                         <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                            <!-- <ol class="carousel-indicators">
-                              {{ with .Resources.ByType "image" }}
-                              {{ $.Scratch.Set "count" 0 }}
-                              {{ range . }}
-                                {{ if eq ($.Scratch.Get "count") 0}}
-                                <li data-target="#mainSlider" class="active" data-slide-to='{{$.Scratch.Get "count"}}' class="active"></li>
-                                {{else}}
-                                <li data-target="#mainSlider" data-slide-to='{{$.Scratch.Get "count"}}'></li>
-                                {{end}}        
-                                {{ $.Scratch.Add "count" 1 }}
-                              {{ end }}
-                              {{ end }}
-                            </ol> -->
+                            
                           
                             <div class="carousel-inner" role="listbox">
                                 {{ with .Resources.Match "tall*" }}
@@ -79,9 +67,8 @@
                                     
 
                                     {{ $imageResized := (.Fill "450x680") }} 
-                                    <img  class="d-block w-100" src="{{ $imageResized.RelPermalink }}" /> 
-                                     <!-- <img  src="{{.Name  }}" alt="Slider image {{.Name  }}"> -->
-                                </div>
+                                    <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" > 
+                                 </div>
                                     {{ $.Scratch.Add "count" 1 }}
                                 {{end}} 
                               {{ end }}
