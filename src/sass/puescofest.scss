@@ -124,6 +124,10 @@ $padding-sides-section: 25px;
     font-size: 1em; 
 }
 
+p {
+    text-align: justify;
+}
+
 .mfp-close-btn-in .mfp-close {
     color: #fff
 }
@@ -305,7 +309,6 @@ nav.sticky {
     letter-spacing: 0.5px;
     font-size: 1em;
     line-height: 22px;
-    text-align: left
 }
 
 h1.main-title {

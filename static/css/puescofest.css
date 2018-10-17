@@ -74,6 +74,9 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1em; }
 
+p {
+  text-align: justify; }
+
 .mfp-close-btn-in .mfp-close {
   color: #fff; }
 
@@ -215,8 +218,7 @@ nav.sticky {
   color: #F2EFCF;
   letter-spacing: 0.5px;
   font-size: 1em;
-  line-height: 22px;
-  text-align: left; }
+  line-height: 22px; }
 
 h1.main-title {
   font-family: "PAIHUENPRO";
