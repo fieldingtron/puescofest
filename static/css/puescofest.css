@@ -1201,6 +1201,17 @@ img.mfp-img {
   .media-body,
   .media-left,
   .media-right {
+    display: block; }
+  .first-section .container.responsive_img {
+    margin-top: 0px; }
+  .first-section {
+    background: url(/images/mobilebackground2.jpg);
+    height: 700px;
+    max-height: 600px;
+    min-height: 350px; }
+  .responsive_img {
+    width: 100%;
+    margin: 30px auto 0px;
     display: block; } }
 
 @media (max-width: 450px) {
