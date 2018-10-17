@@ -20,72 +20,65 @@
                 <p >
                         Las formas fluyen entre los colores cielo, agua y fuego siendo inevitable la presencia del verde y los marrones donde la naturaleza es nuestra directora artística.
 
-                </p>  
+                </p>
+            </div>  
 
-
-                <div id="Slider2" class="carousel slide" data-ride="carousel">
-
+                <div class="col-sm-6 ">
+                    <div id="mainSlider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
-                            {{ with .Resources.Match "sobre*" }}
-                                {{ $.Scratch.Set "count" 0 }}
-                                {{ range . }}
-                                    {{ if eq ($.Scratch.Get "count") 0}}  
-                                        <div class='item active'>
-                                    {{else}}
-                                        <div class='item'>
-                                    {{end}}   
-                                    {{ $imageResized := (.Fill "600x480") }} 
-                                        <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" alt="Slider image {{.Name  }}"> 
-                                        </div>
-                                    {{ $.Scratch.Add "count" 1 }}
-                                {{ end }}
+                            {{ with .Resources.Match "tall*" }}
+                            {{ $.Scratch.Set "count" 0 }}
+                            {{ range . }}
+                            {{ if hasPrefix .Name "tall"}}
+                                {{ if eq ($.Scratch.Get "count") 0}}  
+                                    <div class='item active'>
+                                {{else}}
+                                    <div class='item'>
+                                {{end}}   
+                                {{ $imageResized := (.Fill "450x680") }} 
+                                <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" > 
+                                </div>
+                                {{ $.Scratch.Add "count" 1 }}
+                            {{end}} 
                             {{ end }}
-    
+                            {{ end }}
                         </div>
-                    </div>
-              
-    
-
-
+                    </div>  
+                </div>
             </div>
-            <div class="col-sm-6">
-                   <br/>
-                        <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                            
-                          
-                            <div class="carousel-inner" role="listbox">
-                                {{ with .Resources.Match "tall*" }}
-                                {{ $.Scratch.Set "count" 0 }}
+            <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <br>
+                 <div class="col-sm-6 hidemobile"> 
+                     <br>   
+                        <div id="Slider2" class="carousel slide" data-ride="carousel">
 
-                                {{ range . }}
-                                {{ if hasPrefix .Name "tall"}}
-                                    {{ if eq ($.Scratch.Get "count") 0}}  
-                                      <div class='item active'>
-                                    {{else}}
-                                      <div class='item'>
-                                    {{end}}   
-                                    
-
-                                    {{ $imageResized := (.Fill "450x680") }} 
-                                    <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" > 
-                                 </div>
-                                    {{ $.Scratch.Add "count" 1 }}
-                                {{end}} 
-                              {{ end }}
-                              {{ end }}</div>
-                            </div>  <br>
-
-                           
-
-                            <p>
-                                      Este 2018 se cumple el V Aniversario de PuescoFest, que durante estos 4 días y 3 noches incentivamos el autocuidado y la contemplación creando ambientes de descanso y recreación para sus visitantes junto a una cartelera de más de 20 artistas musicales, una competencia internacional de kayak, camping en un lugar de abundancia natural, cocinería local y consciente, talleres recreativos y para el desarrollo personal, conversatorios inspirados en la filosofía del Küme Mognen (Buen Vivir en Mapudungun), danza para enfocar energía y concentración en el momento presente, arte para expandir nuestro ser interno, yoga para unir nuestro cuerpo y alma, entre otros.
-              
-                              </p>    
-                            
-                            </div>
-
-                             
-
+                                <div class="carousel-inner" role="listbox">
+                                    {{ with .Resources.Match "sobre*" }}
+                                        {{ $.Scratch.Set "count" 0 }}
+                                        {{ range . }}
+                                            {{ if eq ($.Scratch.Get "count") 0}}  
+                                                <div class='item active'>
+                                            {{else}}
+                                                <div class='item'>
+                                            {{end}}   
+                                            {{ $imageResized := (.Fill "600x480") }} 
+                                                <img  class="d-block w-100 center-block" src="{{ $imageResized.RelPermalink }}" alt="Slider image {{.Name  }}"> 
+                                                </div>
+                                            {{ $.Scratch.Add "count" 1 }}
+                                        {{ end }}
+                                    {{ end }}
+                    
+                                </div>
+                            </div> 
+                    
+                </div>
+                
+                <div class="col-sm-6">
+                    <br>
+                    <p>
+                    Este 2018 se cumple el V Aniversario de PuescoFest, que durante estos 4 días y 3 noches incentivamos el autocuidado y la contemplación creando ambientes de descanso y recreación para sus visitantes junto a una cartelera de más de 20 artistas musicales, una competencia internacional de kayak, camping en un lugar de abundancia natural, cocinería local y consciente, talleres recreativos y para el desarrollo personal, conversatorios inspirados en la filosofía del Küme Mognen (Buen Vivir en Mapudungun), danza para enfocar energía y concentración en el momento presente, arte para expandir nuestro ser interno, yoga para unir nuestro cuerpo y alma, entre otros.
+                    </p>    
+                </div>
                 
             </div>
         </div>

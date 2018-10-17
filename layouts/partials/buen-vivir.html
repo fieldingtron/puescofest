@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
-            <h1 class="main-title">Buen Vivir</h1>
+            <h1 class="main-titleb">Buen Vivir</h1>
 
-            <h4 class="sub-title">KÜME MOGNEN (BUEN VIVIR)</h4>
+            <h4 class="sub-titleb">KÜME MOGNEN (BUEN VIVIR)</h4>
 
 <p>
         Queremos Cuidar el Medio Ambiente, creemos que imperante utilizar las mejores practicas Eco Sustentables para una armoniosa relación con el territorio. 
@@ -12,16 +12,22 @@
 
 </p>
   
+<h4 class="sub-title-smaller text-center">CONVIVENCIA TERRITORIAL</h4>
 
-<div class="col-sm-6 no-gutter nopadding">
+<div class="col-sm-6 nopadding">
 
-        <h4 class="sub-title-smaller">CONVIVENCIA TERRITORIAL</h4>
         <h5><strong>SALUDO A LOS PODERES </strong></h5>
         <p>
                 Entrando a un territorio biodiverso puede uno escuchar como pájaros, insectos y otros animales se comunican y hacen eco de nuestro ingreso al territorio. 
                 Tomar atención a sus manifestaciones es fundamental. Para ello es necesario abandonar el dialogo mental y afinar el oído. En la biodiversidad cada linaje guarda estrecha relación con un poder, Ngen, espíritu o como prefiera llamarle.    
         </p>
-        <br>
+</div>
+<div class="col-sm-6">
+   {{ partial "imagefill.html" (dict "aff" "0" "isize" "550x366" "rez" ($.Page.Resources.Match ("buen*")) ) }} <br>
+</div>
+
+
+<div class="col-sm-6 nopadding">
 
         <h5><strong>LA TIENDA O CARPA </strong></h5>
         <p>
@@ -29,6 +35,13 @@
                 Los Residuos Humanos deben ir directo a sus separadores para Reciclaje.
 
         </p>
+</div>
+<div class="col-sm-6">
+        {{ partial "imagefill.html" (dict "aff" "1" "isize" "550x366" "rez" ($.Page.Resources.Match ("buen*")) ) }} <br>
+</div>
+
+<div class="col-sm-6 nopadding">
+       
         <br>
         <h5><strong>DESECHOS</strong></h5>
         <p>
@@ -40,16 +53,8 @@
 
 </div>
 <div class="col-sm-6">
-        {{ with .Resources.Match "buen*" }}
-            {{ range . }}       
-                {{ $imageResized := (.Fill "550x366") }} 
-                <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
-                <br>
-                <br>
-            {{end}} 
-      {{ end }}  
+                {{ partial "imagefill.html" (dict "aff" "2" "isize" "550x366" "rez" ($.Page.Resources.Match ("buen*")) ) }} <br>
 </div>
-
 
 
 

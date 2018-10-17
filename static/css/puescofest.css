@@ -1207,7 +1207,12 @@ img.mfp-img {
   .first-section .container.responsive_img {
     margin-top: 0px; }
   .first-section {
-    background: url(/images/mobilebackground2.jpg); }
+    background: url(/images/mobilebackground2.jpg);
+    height: 500px;
+    max-height: 450px;
+    min-height: 350px; }
+  .hidemobile {
+    display: none; }
   .second-section {
     background-size: initial; }
   .top-footer {

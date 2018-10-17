@@ -1,0 +1,15 @@
+{{ $aff := .aff}}
+{{ $isize := .isize }}
+{{ with .rez }}
+    {{ if eq  $aff "0" }}
+        {{ range first 1 . }} 
+        {{ $imageResized := (.Fill $isize ) }} 
+            <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt="image {{.Name  }}"/> 
+        {{end}} 
+    {{ else }}
+        {{ range first 1 (after $aff .) }} 
+        {{ $imageResized := (.Fill $isize ) }} 
+            <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt="image {{.Name  }}"/> 
+        {{end}}       
+    {{ end }}     
+{{ end }}  
