@@ -1,0 +1,125 @@
+{{ define "main" }}
+<section class="first-section" id="init">
+        <div class="container responsive_img">
+       
+            <div class="row">
+            <div class="col-lg-3 col-sm-4 col-xs-12 col-md-3  col-sm-offset-0">
+                <img class="img-responsive" src="/images/mobile-header-1.png" alt="Puesco Fest Mobile Header">
+            </div>
+            </div>
+               
+            </div>
+</section>
+<!-- Nav Bar -->
+<section class="second-section" id="video">
+    {{ partial "navbar.html" . }}
+    <div class="container">
+        <div class="row">
+
+        <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
+            <!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fpuescofest%2Fvideos%2F1923060617998049%2F&show_text=0&width=750" width="750" height="422" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+            <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls>
+                    <source src="/puesco-intro.mp4" type="video/mp4">
+                </video>
+            </div>
+        
+        </div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="about-section dark-back" id="about">
+    {{ partial "about.html" . }}
+</section>
+
+<!-- 
+<section class="practices-section" id="practices">
+    {{ partial "programa.html" . }}
+</section>  
+-->
+
+<section class="lineUp-section light-back" id="lineUp">
+    {{ partial "lineup.html" . }}
+</section>
+
+ 
+
+
+<section class="kayak-section dark-back2" id="kayak">
+    {{ partial "kayak.html" . }}
+</section> 
+<section class="como-llegar-section light-back2" id="routes">
+    {{ partial "como-llegar.html" . }}
+</section> 
+<section class="camping-section dark-back" id="camping">
+    {{ partial "camping.html" . }}
+</section>
+<section class="buen-vivir-section light-back" id="buen-vivir">
+        {{ partial "buen-vivir.html" . }}
+    </section>  
+<section class="tickets-section dark-back2" id="tickets">
+    {{ partial "tickets.html" . }}
+</section> 
+<section class="contact-section light-back2" id="contacto">
+    {{ partial "contacto.html" . }}
+</section> 
+    
+
+
+ <!--line up-->
+ {{ $.Scratch.Set "count" 1 }}
+    {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }}
+        <div id='lineup-{{$.Scratch.Get "count"}}' class="mfp-hide line-up">
+            {{ $.Scratch.Add "count" 1 }}
+            <div class="cont">
+                <div class="top">
+                    <figure>
+                        {{$title := .Title}}
+                        {{ $image := .Resources.GetMatch "band*.jpg" }}
+                        {{ with $image }}
+                        {{ $scaled := .Fill "800x600" }}
+                        <img class="img-fluid" src="{{ $scaled.Permalink }}" alt="{{$title }}">
+                        {{ end }}
+                    </figure>
+                </div>
+                <div class="bottom">
+                    <h3>{{.Title}}</h3>
+                    <p> {{.Content}} </p>
+                    <div class="text-center">
+                            <ul class="redes">
+                                    {{ if isset .Params "soundcloud" }} 
+                                    <li>
+                                            <a href='{{ index .Params "soundcloud" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-soundcloud" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "facebook" }} 
+                                    <li>
+                                            <a href='{{ index .Params "facebook" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "instagram" }} 
+                                    <li>
+                                            <a href='{{ index .Params "instagram" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "spotify" }} 
+                                    <li>
+                                            <a href='{{ index .Params "spotify" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-spotify" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}
+                                    {{ if isset .Params "youtube" }} 
+                                    <li>
+                                            <a href='{{ index .Params "youtube" }}' target="_blank" class="sc_icon icon"> <i class="fa fa-youtube" aria-hidden="true"></i> </a>
+                                    </li>
+                                    {{ end }}     
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    {{ end}}
+
+{{ end }}
