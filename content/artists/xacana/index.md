@@ -2,7 +2,8 @@
 title: "Xacana"
 date: 2017-01-01
 draft: false
-headless : false
+headless : false\
+weight: 13
 facebook: "https://www.facebook.com/XakanaLinco"
 youtube: "https://m.youtube.com/watch?v=6yKr0ebPCBQ"
 ---

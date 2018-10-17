@@ -1,8 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <div class="col-sm-6">
-            <h1 class="main-title">Sobre</h1>
+                <h1 class="main-title">Sobre</h1>
+
+            <div class="col-sm-6 nopadding">
             <p><strong> Puescofest es una celebracion por los rios del mundo</strong></p> 
             <p>Promovemos el cuidado del territorio ancestral donde nos encontramos en
                 Puesco, Curarrehue, Chile. </p>
@@ -16,6 +17,32 @@
                         Sueño que no solo es dormir, es ensoñar una realidad como un propósito a concretar. Donde las tejedoras en los “atrapasueños” canalizan a través de su geometría sagrada y trasmiten sanación en cada punto que trazan.
                 </p>  
                
+                <p >
+                        Las formas fluyen entre los colores cielo, agua y fuego siendo inevitable la presencia del verde y los marrones donde la naturaleza es nuestra directora artística.
+
+                </p>  
+
+
+                <div id="Slider2" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner" role="listbox">
+                            {{ with .Resources.Match "sobre*" }}
+                                {{ $.Scratch.Set "count" 0 }}
+                                {{ range . }}
+                                    {{ if eq ($.Scratch.Get "count") 0}}  
+                                        <div class='item active'>
+                                    {{else}}
+                                        <div class='item'>
+                                    {{end}}   
+                                    {{ $imageResized := (.Fill "600x480") }} 
+                                        <img  class="d-block w-100" src="{{ $imageResized.RelPermalink }}" alt="Slider image {{.Name  }}"> />
+                                        </div>
+                                    {{ $.Scratch.Add "count" 1 }}
+                                {{ end }}
+                            {{ end }}
+    
+                        </div>
+                    </div>
               
     
 
@@ -23,7 +50,7 @@
             </div>
             <div class="col-sm-6 no-gutter">
                    
-                        <div id="mainSlider" class="carousels slide" data-ride="carousel">
+                        <div id="mainSlider" class="carousel slide" data-ride="carousel">
                             <!-- <ol class="carousel-indicators">
                               {{ with .Resources.ByType "image" }}
                               {{ $.Scratch.Set "count" 0 }}
@@ -59,12 +86,9 @@
                                 {{end}} 
                               {{ end }}
                               {{ end }}</div>
-                            </div>
-                            <p >
-                                <br>
-                                    Las formas fluyen entre los colores cielo, agua y fuego siendo inevitable la presencia del verde y los marrones donde la naturaleza es nuestra directora artística.
-            
-                            </p>  
+                            </div>  <br>
+
+                           
 
                             <p>
                                       Este 2018 se cumple el V Aniversario de PuescoFest, que durante estos 4 días y 3 noches incentivamos el autocuidado y la contemplación creando ambientes de descanso y recreación para sus visitantes junto a una cartelera de más de 20 artistas musicales, una competencia internacional de kayak, camping en un lugar de abundancia natural, cocinería local y consciente, talleres recreativos y para el desarrollo personal, conversatorios inspirados en la filosofía del Küme Mognen (Buen Vivir en Mapudungun), danza para enfocar energía y concentración en el momento presente, arte para expandir nuestro ser interno, yoga para unir nuestro cuerpo y alma, entre otros.

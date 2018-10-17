@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-11 col-md-offset-1 col-lg-8 col-lg-offset-2">
-            <h1 class="main-title">Line Up</h1>
+            <h1 class="main-titleb">Line Up</h1>
         </div>
     </div>
     <div class="row">
@@ -13,7 +13,7 @@
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
             <div class="row">
                 {{ $.Scratch.Set "count" 1 }}
-                {{ range first 20 (where .Site.RegularPages "Section" "in" (slice "artists")) }} 
+                {{ range first 20 (where .Site.RegularPages.ByWeight "Section" "in" (slice "artists")) }} 
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                         <a href='#lineup-{{$.Scratch.Get "count"}}' class="open-popup-link">
                             {{ $.Scratch.Add "count" 1 }}
