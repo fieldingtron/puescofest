@@ -8,3 +8,6 @@ soundcloud: "https://soundcloud.com/aflorareggae"
 facebook: "https://www.facebook.com/aflora.oficial/"
 instagram: "https://www.instagram.com/aflora_reggae/"
 ---
+* **Origen**: Año 2009
+* **Género**: Reggae
+* **Ubicación**: Santiago, Chile

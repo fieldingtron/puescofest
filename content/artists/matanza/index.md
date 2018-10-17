@@ -5,5 +5,6 @@ draft: false
 headless : false
 weight: 2
 ---
-
-info del groupo
+* **Origen:** Año 2012 
+* **Género:** Tribal House Dub
+* **Origen:** Santiago, Chile.

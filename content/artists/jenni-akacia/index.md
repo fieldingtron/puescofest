@@ -6,4 +6,6 @@ headless : false
 facebook: "https://www.facebook.com/YOSOYJenniferG/"
 instagram: "https://www.instagram.com/akaciajenni/"
 ---
-Informaction de la banda
+* **Origen:** Año 2013 
+* **Género:** Folkrock
+* **Origen:** Pucón, Chile.

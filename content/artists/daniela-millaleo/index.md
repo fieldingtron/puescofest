@@ -8,4 +8,6 @@ facebook: "https://www.facebook.com/DanielaMillaleoOficial/"
 spotify: "https://open.spotify.com/artist/5t6HRqxLXUFgNXV4598nxz"
 twitter: "https://twitter.com/danielamillaleo"
 ---
-Informaction de la banda
+* **Origen:** Año 2012 
+* **Género:** Folkrock
+* **Origen:** Santiago, Chile.

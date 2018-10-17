@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/dania-neko"
 facebook: "https://www.facebook.com/dania.neko.oficial/"
 instagram: "https://www.instagram.com/danianeko"
 ---
-Informaction de la banda
+* **Origen:** Año 2012 
+* **Género:** Hip Hop
+* **Origen:** Santiago, Chile.

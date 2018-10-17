@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/tianobless"
 facebook: "https://www.facebook.com/tiano.bless/"
 instagram: "https://www.instagram.com/tianobless"
 ---
-Informaction de la banda
+* **Origen:** Año 2012 
+* **Género:** Reggae roots
+* **Origen:** Santiago, Chile.

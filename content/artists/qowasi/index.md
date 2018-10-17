@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/qowasiurban"
 facebook: "https://www.facebook.com/Qowasi/"
 instagram: "https://www.instagram.com/Qowasi/"
 ---
-Informaction de la banda
+* **Origen:** Año 2000 
+* **Género:** Folk Urbano
+* **Origen:** Valparaiso, Chile.

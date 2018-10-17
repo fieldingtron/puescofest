@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/chicogonzalez01"
 facebook: "https://www.facebook.com/chicogonzalez01/"
 instagram: "https://www.instagram.com/chicogonzalezphoto/"
 ---
-Informaction de la banda
+* **Origen:** Año 2002 
+* **Género:** Deep Slow-House
+* **Origen:** Pucón, Chile.

@@ -7,5 +7,6 @@ weight: 3
 facebook: 
 instagram:
 ---
-
-info here
+* **Origen:** Año 2015 
+* **Género:** Percutivo caribeño
+* **Origen:** Santiago, Chile.

@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/kaleema_ba"
 facebook: "https://www.facebook.com/kaleemasounds/"
 instagram: "https://www.instagram.com/kaleema_/"
 ---
-Informaction de la banda
+* **Origen:** Año 2010 
+* **Género:** Triphop
+* **Origen:** Buenos Aires, Argentina.

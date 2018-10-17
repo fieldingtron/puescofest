@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/user-226791617-232911362"
 instagram: "https://www.instagram.com/waikil_rapmapuche/"
 facebook: "https://www.facebook.com/JaimeCuyanaoWaikil/"
 ---
-Informaction de la banda
+* **Origen:** Año 2015 
+* **Género:** Rap Mapuche
+* **Origen:** Santiago, Chile.

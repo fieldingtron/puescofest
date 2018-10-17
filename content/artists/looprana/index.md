@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/aflorareggae"
 facebook: "https://www.facebook.com/aflora.oficial/"
 instagram: "https://www.instagram.com/aflora_reggae/"
 ---
-Informaction de la banda
+* **Origen:** Año 2017 
+* **Género:** Etno Electrónica
+* **Origen:** Villarrica, Chile.

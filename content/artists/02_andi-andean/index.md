@@ -7,4 +7,6 @@ soundcloud: "https://soundcloud.com/andiandean"
 facebook: "https://www.facebook.com/andiandeanmusic"
 instagram: "https://www.instagram.com/andi.andean/"
 ---
-Informaction de la banda
+* **Origen**: Año 2013
+* **Género**: Deep Tribal
+* **Ubicación**: Pucón, Chile

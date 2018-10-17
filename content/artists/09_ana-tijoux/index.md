@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/ana-tijoux-official"
 facebook: "https://www.facebook.com/anatijoux/"
 instagram: "https://www.instagram.com/anatijoux/"
 ---
-Informaction de la banda
+* **Origen:**  Año 1997
+* **Género:**  Hip Hop, Indie, Otro
+* **Origen:**  Santiago, Chile

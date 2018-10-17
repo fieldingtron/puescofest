@@ -8,4 +8,6 @@ soundcloud: "https://soundcloud.com/funka"
 facebook: "https://www.facebook.com/FunkaCr"
 instagram: "https://www.instagram.com/funka_groove/"
 ---
-Informaction de la banda
+* **Origen:** Año 2011 
+* **Género:** Funk / Glitch-hop / Electronic
+* **Origen:** San José, Costa Rica.

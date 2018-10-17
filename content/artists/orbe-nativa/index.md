@@ -4,4 +4,6 @@ date: 2017-01-01
 draft: false
 headless : false
 ---
-Informaction de la banda
+* **Origen:** Año 2013 
+* **Género:** Afro Experimental
+* **Origen:** Pucón, Chile.
