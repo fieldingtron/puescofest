@@ -41,10 +41,9 @@
 </div>
 <div class="col-sm-6">
         {{ with .Resources.Match "buen*" }}
-
             {{ range . }}       
                 {{ $imageResized := (.Fill "550x366") }} 
-                <img  class="img-responsive" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
+                <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
                 <br>
                 <br>
             {{end}} 

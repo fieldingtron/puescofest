@@ -6,6 +6,22 @@ $color3: #f5f0d4;
 $color4: #e9cfc5;
 $color5: #019C99;
 $color6: #E09985;
+
+$color1: #502419;
+$color2: #7EA172;
+$color3: #C7CB85;
+$color4: #192f4f;
+$color5: #192f4f;
+$color6: #E09985;
+
+$color1: #192f4f;
+$color2: #f2d0c6;
+$color3: #f7f0d4;
+$color4: #84c152;
+$color5: #008B88;
+$color6: #f5e2ce;
+
+
 $min-section-height: 400px;
 $section-padding:  80px 0px;
 $font-size-section: 1.0em;
@@ -48,6 +64,55 @@ $padding-sides-section: 25px;
     line-height: $line-height-section;
     padding-left: $padding-sides-section;
     padding-right:$padding-sides-section;
+
+    padding: 80px 0px;
+    background-image: url('/images/araucarias1_bckgr.png');
+    // background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 600px
+}
+
+
+.light-back2 {
+    background-color: $color2;
+    min-height: $min-section-height;
+    padding: $section-padding;
+    font-size: $font-size-section;
+    letter-spacing: $letter-spacing-section;
+    line-height: $line-height-section;
+    padding-left: $padding-sides-section;
+    padding-right:$padding-sides-section;
+}
+
+
+.dark-back2 {
+    background-color: $color5;
+    color: $color3;
+    min-height: $min-section-height;
+    padding: $section-padding;
+    font-size: $font-size-section;
+    letter-spacing: $letter-spacing-section;
+    line-height: $line-height-section;
+    padding-left: $padding-sides-section;
+    padding-right:$padding-sides-section;
+
+    padding: 80px 0px;
+    background-image: url('/images/araucarias1_bckgr.png');
+    // background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 600px
+
+}
+
+.dark-back2 a{
+    color:$color1;
+    text-decoration: underline;
+    font-weight: 700;
+
 }
 
 .smallernav {
@@ -229,16 +294,7 @@ nav.sticky {
     width: 100%;
 }
 
-.about-section,.como-llegar-section, .buen-vivir-section, .contact-section {
-    background-color: $color1;
-    padding: 80px 0px;
-    background-image: url('/images/araucarias1_bckgr.png');
-    // background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: right;
-    min-height: 600px
-}
+
 
  
 
@@ -283,6 +339,15 @@ h1.main-titleb {
     color: #ae5959;
     text-transform: uppercase
 }
+.sub-titleb {
+    font-family: $title-font;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: $color1;
+    text-transform: uppercase
+}
 
 .sub-title-smaller {
     font-family: $title-font;
@@ -303,16 +368,6 @@ h1.second {
     text-transform: uppercase
 }
 
-.practices-section, .camping-section, .tickets-section {
-    background-color: $color3;
-    padding: 80px 0px;
-    min-height: 600px;
-    background-image: url("/images/kultrun_bckgr2.png");
-    // background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: left;
-}
 
 
 .kayak-section {

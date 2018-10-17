@@ -9,7 +9,7 @@
   height: 0; }
 
 .light-back {
-  background-color: #f5f0d4;
+  background-color: #f7f0d4;
   min-height: 400px;
   padding: 80px 0px;
   font-size: 1em;
@@ -20,7 +20,23 @@
 
 .dark-back {
   background-color: #192f4f;
-  color: #f5f0d4;
+  color: #f7f0d4;
+  min-height: 400px;
+  padding: 80px 0px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding: 80px 0px;
+  background-image: url("/images/araucarias1_bckgr.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 600px; }
+
+.light-back2 {
+  background-color: #f2d0c6;
   min-height: 400px;
   padding: 80px 0px;
   font-size: 1em;
@@ -28,6 +44,28 @@
   line-height: 1.5em;
   padding-left: 25px;
   padding-right: 25px; }
+
+.dark-back2 {
+  background-color: #008B88;
+  color: #f7f0d4;
+  min-height: 400px;
+  padding: 80px 0px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding: 80px 0px;
+  background-image: url("/images/araucarias1_bckgr.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 600px; }
+
+.dark-back2 a {
+  color: #192f4f;
+  text-decoration: underline;
+  font-weight: 700; }
 
 .smallernav {
   max-width: 900px; }
@@ -85,7 +123,7 @@ nav.sticky {
   width: 85%; }
 
 .navbar-default {
-  background: #f5f0d4;
+  background: #f7f0d4;
   border: 0px;
   border-radius: 0px;
   margin-bottom: 0px;
@@ -167,19 +205,10 @@ nav.sticky {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  background-color: #019C99; }
+  background-color: #008B88; }
 
 .second-section iframe {
   width: 100%; }
-
-.about-section, .como-llegar-section, .buen-vivir-section, .contact-section {
-  background-color: #192f4f;
-  padding: 80px 0px;
-  background-image: url("/images/araucarias1_bckgr.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: right;
-  min-height: 600px; }
 
 .about-section p,
 .our-family p {
@@ -218,6 +247,15 @@ h1.main-titleb {
   color: #ae5959;
   text-transform: uppercase; }
 
+.sub-titleb {
+  font-family: "PAIHUENPRO";
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: #192f4f;
+  text-transform: uppercase; }
+
 .sub-title-smaller {
   font-family: "PAIHUENPRO";
   font-size: 20px;
@@ -234,15 +272,6 @@ h1.second {
   margin-bottom: 40px;
   color: #fff;
   text-transform: uppercase; }
-
-.practices-section, .camping-section, .tickets-section {
-  background-color: #f5f0d4;
-  padding: 80px 0px;
-  min-height: 600px;
-  background-image: url("/images/kultrun_bckgr2.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: left; }
 
 .kayak-section {
   padding: 80px 0px;
@@ -274,7 +303,7 @@ p span {
   color: #ae5959; }
 
 .lineUp-section {
-  background-color: #f5f0d4;
+  background-color: #f7f0d4;
   padding: 80px 0px;
   background-size: 100%;
   background-attachment: fixed;
@@ -283,7 +312,7 @@ p span {
   min-height: 600px; }
 
 .lineUp-section p span {
-  color: #348a87; }
+  color: #f2d0c6; }
 
 .lineUp-section h2 {
   font-family: "PAIHUENPRO";
