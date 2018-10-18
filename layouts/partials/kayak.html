@@ -56,8 +56,19 @@
 
             <div class="col-sm-6">
                 <img class="img-responsive center-block" src="/images/salvaje-700.jpg" alt="rio salvaje">
+                <br>
 
             </div>
+            <br>
+            {{ with .Resources.Match "kayak*" }}
+            {{ range . }}       
+                {{ $imageResized := (.Fill "720x450") }} 
+                <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
+                <br>
+                <br>
+            {{end}} 
+    {{ end }}  
+
             </div>
      </div>
 </div>
