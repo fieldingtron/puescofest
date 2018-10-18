@@ -1,7 +1,8 @@
 # redirects for Netlify - https://www.netlify.com/docs/redirects/
 /home   / 302
 /go/wsj https://wsj.com/ 302
-http://puescofest.netlify.com/* http://www.puescofest.org/:splat 301!
+http://puescofest.netlify.com/* https://www.puescofest.org/:splat 301!
+https://puescofest.netlify.com/* https://www.puescofest.org/:splat 301!
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
 {{ . }} {{ $p.RelPermalink -}}
