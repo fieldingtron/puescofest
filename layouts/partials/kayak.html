@@ -24,7 +24,7 @@
             <div class="col-sm-6 nopadding">
                 <p><strong>Fecha:</strong> Viernes 23 de Noviembre.</p>
                 <p>  
-                <strong>Inscripciones:</strong> Asistir a un Taller de Seguridad obligatorio, que se realizará a las 16:00 horas del Jueves 22 de Noviembre en Escenario Luna Küyen.
+                <strong>Inscripciones:</strong> Asistir a un Taller de Seguridad obligatorio, que se realizará a las 17:00 horas del Jueves 22 de Noviembre en Escenario Luna Küyen.
                 </p>
                 <p>
                     El lugar de nacimiento del río Trankurra, Tres Troncos es famoso por su combinación de fuerza, pendiente y movimientos técnicos.  Fue considerado como uno de los campos más difíciles del White Water Grand Prix mundial de 2012.
@@ -41,13 +41,15 @@
             </div>
             </div>
 
+        
+
                      <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
             <h1 class="sub-titleb text-center">Puesco Salvaje</h1>
 
             <div class="col-sm-6">
-                <p><strong>Fecha:</strong> Sabado 25 de Noviembre.</p>
+                <p><strong>Fecha:</strong> Viernes 23 de Noviembre.</p>
                 <p>  
-                <strong>Inscripciones:</strong> Asistir a un Taller de Seguridad obligatorio, que se realizará a las 16:00 horas del Jueves 22 de Noviembre en Escenario Luna Küyen.
+                <strong>Inscripciones:</strong> Asistir a un Taller de Seguridad obligatorio, que se realizará a las 17:00 horas del Jueves 22 de Noviembre en Escenario Luna Küyen.
                 </p>
                 <p>
                     Tradicional descenso del mítico Puesco Alto. Se puede competir en forma individual o por parejas, gana quien llega primero a la meta en su categoría.                </p>
@@ -59,16 +61,48 @@
                 <br>
 
             </div>
-            <br>
-            {{ with .Resources.Match "kayak*" }}
-            {{ range . }}       
-                {{ $imageResized := (.Fill "720x450") }} 
-                <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
-                <br>
-                <br>
-            {{end}} 
-    {{ end }}  
 
+          
             </div>
+
+            <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
+
+               
+                <h1 class="sub-titleb text-center">Puesco Divertido</h1>
+    
+                <div class="col-sm-6">
+    
+                {{ with .Resources.Match "kayak*" }}
+                        {{ range . }}       
+                            {{ $imageResized := (.Fill "550x366") }} 
+                            <img  class="img-responsive center-block" src="{{ $imageResized.RelPermalink }}" alt=" image {{.Name  }}"/> 
+                            <br>
+                            <br>
+                        {{end}} 
+                {{ end }}  
+    
+    
+                </div>
+                <div class="col-sm-6 nopadding">
+                    <p><strong>Fecha:</strong> Sabado 24 de Noviembre.</p>
+                    <p>  
+                    <strong>Inscripciones:</strong> Asistir a un Taller de Seguridad obligatorio, que se realizará a las 17:00 horas del Jueves 22 de Noviembre en Escenario Luna Küyen.
+                    </p>
+                    <p>
+                        Descenso del mítico puesco, en sus zonas más amigables para quienes quieran ser parte y disfrutar de sus aguas                    </p>
+                    
+                </div>
+                </div>
+
+
+
+                <div class="col-md-11 col-md-offset-1 col-sm-offset-0 col-lg-8 col-lg-offset-2 ">
+
+               
+                    <h1 class="sub-titleb text-center">Premacion</h1>
+        
+                    SÁBADO 24 de Noviembre en la tarde! Con grandes premios para los mejores representantes de los Ríos Libres y Salvajes!
+                    </div>
+
      </div>
 </div>
