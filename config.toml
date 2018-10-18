@@ -1,6 +1,6 @@
 baseURL = ""
-languageCode = "en-us"
-title = "Aurus Design"
+languageCode = "es-es"
+title = "Puesco Fest"
 disableHugoGeneratorInject = true
 disableKinds = ["taxonomyTerm"]
 
@@ -8,18 +8,7 @@ enableRobotsTXT = false
 disableAliases = true
 
 [params]
-disallow_search_engines = true # set robots.txt to disallow everything
-tagline =  "Desarrollo Web - Diseño Gráfico  - Marketing Digital"
-jumboHeader = "Aurus Design"
-facebook_username = "https://www.facebook.com/Aurus-Design-658965700963225"
-about_text_heading = "Sobre Aurus Design"
-about_text_1 = "Aurus Design nace en la ciudad de Temuco, Chile con la idea de aportar al crecimiento de pequeñas y medianas empresas y sus sueños ofreciendo una amplia gama de servicios en diseño gráfico, web y marketing digital de alta calidad."
-about_text_2 = "Nuestra empresa está compuesta por profesionales jóvenes cuyo anhelo es poder contribuir y fortalecer proyectos relacionados con innovación, sustentabilidad y desarrollo de la consciencia en Chile y el mundo."
-address_line_1 = "Villarica, Pucon, Chile"
-address_line_2 = ""
-jumprock_alias = ""    ## checkout jumprock.co for an alternative to formspree.io
-contact_me_header = ""  ## could write this in spanish 
-footer_right = ""
+disallow_search_engines = false # set robots.txt to disallow everything
 
 # add redirects/headers
 [outputs]
