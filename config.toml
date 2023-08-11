@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "es-es"
 title = "Puesco Fest"
 disableHugoGeneratorInject = true
-disableKinds = ["taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 enableRobotsTXT = false
 disableAliases = true
@@ -15,8 +15,6 @@ disallow_search_engines = false # set robots.txt to disallow everything
 home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 
 # remove .{ext} from text/netlify
-suffix = ""
-delimiter = ""
 
 # add output format for netlify _redirects
 [outputFormats.REDIRECTS]
