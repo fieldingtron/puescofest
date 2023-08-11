@@ -3,11 +3,9 @@
     publish = "public"
 
 [build.environment]
-    HUGO_VERSION = "0.117"
+    HUGO_VERSION = "0.117.0"
 
 [context.production.environment]
     HUGO_ENV = "production"
     NODE_ENV = "production"
 
-[context.deploy-preview]
-    command = "npm run build:preview"
