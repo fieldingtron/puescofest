@@ -1,5 +1,5 @@
 {
-  "name": "atlas",
+  "name": "PuescoFest",
   "private": true,
   "scripts": {
     "build": "hugo",
@@ -13,13 +13,5 @@
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
     "tinacms": "^1.5.18"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0"
   }
 }
