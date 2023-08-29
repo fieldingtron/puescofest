@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "es-es"
 title = "Puesco Fest"
 disableHugoGeneratorInject = true
-disableKinds = ["taxonomy"]
+#  disableKinds = ["taxonomy"]
 
 enableRobotsTXT = false
 disableAliases = true
