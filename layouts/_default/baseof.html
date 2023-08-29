@@ -8,22 +8,12 @@
             {{- with .Title }}{{ . }} {{ else }} {{ .Site.Title }} {{ end }}
         {{ end }}</title>
 
-        {{ range .AlternativeOutputFormats }}
-            <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-        {{ end }}
-
-        {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }} 
+        <script src="https://cdn.tailwindcss.com"></script>
 
     </head>
-    <body id="page-top">
-
+    <body id="page-top" class="bg-teal-700" >
     
         {{ block "main" . }}{{ end }}
-     
-
-        {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
-
         {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
-
     </body>
 </html>
